@@ -2267,34 +2267,57 @@
         padding: 6px 12px
       }
 
+      /* ── Practice tabs ──────────────────────────────────────
+         Three tabs must fit on one line. Remove wrap,
+         shrink font + padding, allow tabs to compress.     */
+      .practice-tabs {
+        flex-wrap: nowrap;
+        gap: 5px
+      }
+
+      .practice-tab {
+        font-size: 11.5px;
+        padding: 7px 11px;
+        white-space: nowrap
+      }
+
       /* ── Memory bar (framework pages + quick ref) ──────────
-         On mobile the pills row-wrap into a ragged mess.
-         Stack as a centered column of pills instead.       */
+         Replace the wrapping pill row with a clean vertical
+         stack. Pills become block rows; arrows hidden.
+         Matches the dark-card aesthetic of the completion
+         framework list without needing HTML changes.       */
       .memory-bar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 0;
-        padding: 16px 18px
+        padding: 20px 20px
       }
 
       .memory-bar-label {
-        margin-bottom: 10px;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        color: rgba(255,255,255,0.48);
+        margin-bottom: 14px;
         margin-right: 0
       }
 
-      .memory-pill {
-        font-size: 13px;
-        padding: 5px 14px;
-        margin-bottom: 4px
+      .memory-arrow {
+        display: none
       }
 
-      /* Show arrows as vertical connectors between pills */
-      .memory-arrow {
+      .memory-pill {
         display: block;
-        font-size: 11px;
-        opacity: 0.4;
-        margin: 1px 0 1px 8px;
-        line-height: 1
+        background: rgba(255,255,255,0.1);
+        border-radius: var(--radius-sm);
+        padding: 10px 14px;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 6px
+      }
+
+      .memory-pill:last-of-type {
+        margin-bottom: 0
       }
 
       /* ── Skill hero key-move text ── */
