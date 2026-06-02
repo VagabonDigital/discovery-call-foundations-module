@@ -2177,6 +2177,148 @@
     .challenge-example p:last-child { margin-bottom: 0 }
     .challenge-example .task { color: var(--teal); font-weight: 600 }
 
+    /* ── MOBILE FIRST ───────────────────────────────────────────
+       Breakpoint: ≤ 540px (single-column phone)
+    ──────────────────────────────────────────────────────────── */
+    @media (max-width: 540px) {
+
+      /* ── Page content padding ─── */
+      .page-content {
+        padding: 24px 16px 90px
+      }
+
+      /* ── Bottom bar ─────────────
+         4 elements at 32px padding don't fit.
+         Solution: tighter padding, smaller controls,
+         hide the page-title portion of the indicator.      */
+      .bottom-bar {
+        padding: 0 12px;
+        height: 64px;
+        gap: 6px
+      }
+
+      .bottom-left {
+        gap: 6px;
+        flex-shrink: 1;
+        min-width: 0
+      }
+
+      .bottom-right {
+        gap: 8px;
+        flex-shrink: 0
+      }
+
+      /* Truncate long indicator text to just "Page N of 19" */
+      .page-indicator {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 80px
+      }
+
+      .btn-back {
+        padding: 9px 12px;
+        font-size: 13px
+      }
+
+      .btn-jump {
+        padding: 9px 12px;
+        font-size: 13px
+      }
+
+      .btn-continue {
+        padding: 10px 16px;
+        font-size: 13.5px
+      }
+
+      /* ── Jump panel ─── */
+      .jump-panel {
+        bottom: 68px;
+        left: 8px;
+        right: 8px;
+        width: auto;
+        transform: none
+      }
+
+      /* ── Landing: flow pills ────
+         7 pills in a flex-wrap row looks messy on mobile.
+         Tighten into a compact centered wrap; hide arrows
+         so only the pills show, separated by gap.         */
+      .flow-visual {
+        gap: 6px;
+        margin: 20px 0 28px;
+        justify-content: center
+      }
+
+      .flow-arrow {
+        display: none
+      }
+
+      .flow-pill {
+        font-size: 12.5px;
+        padding: 7px 14px
+      }
+
+      /* ── Skill pages: phrase chips ──
+         Already wrap fine; just tighten padding on small screens */
+      .phrase-chip {
+        font-size: 12.5px;
+        padding: 6px 12px
+      }
+
+      /* ── Memory bar (framework pages + quick ref) ──────────
+         On mobile the pills row-wrap into a ragged mess.
+         Stack as a centered column of pills instead.       */
+      .memory-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 16px 18px
+      }
+
+      .memory-bar-label {
+        margin-bottom: 10px;
+        margin-right: 0
+      }
+
+      .memory-pill {
+        font-size: 13px;
+        padding: 5px 14px;
+        margin-bottom: 4px
+      }
+
+      /* Show arrows as vertical connectors between pills */
+      .memory-arrow {
+        display: block;
+        font-size: 11px;
+        opacity: 0.4;
+        margin: 1px 0 1px 8px;
+        line-height: 1
+      }
+
+      /* ── Skill hero key-move text ── */
+      .skill-key-move {
+        font-size: 13px
+      }
+
+      /* ── Top bar brand: hide subtitle on very small screens ── */
+      .brand-sub {
+        display: none
+      }
+
+      /* ── Page title font size ── */
+      .page-title {
+        font-size: 26px
+      }
+
+      /* ── Hero title ── */
+      .hero-title {
+        font-size: clamp(30px, 9vw, 42px)
+      }
+
+    }
+
     /* ── PRINT / SAVE AS PDF (Quick Reference only) ────────── */
     @media print {
       .top-bar,
