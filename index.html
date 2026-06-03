@@ -263,6 +263,14 @@
       letter-spacing: 0.02em
     }
 
+    .page-count-mobile {
+      display: none;
+    }
+
+    .page-title-desktop {
+      display: inline;
+    }
+
     /* ── JUMP MENU ──────────────────────────────────────── */
     .btn-jump {
       display: inline-flex;
@@ -2132,37 +2140,117 @@
     }
 
     /* ── UTILITY: SPACING ───────────────────────────────── */
-    .mt-8  { margin-top:  8px }
-    .mt-12 { margin-top: 12px }
-    .mt-14 { margin-top: 14px }
-    .mt-16 { margin-top: 16px }
-    .mt-20 { margin-top: 20px }
-    .mt-24 { margin-top: 24px }
-    .mt-28 { margin-top: 28px }
-    .mt-32 { margin-top: 32px }
-    .mb-8  { margin-bottom:  8px }
-    .mb-12 { margin-bottom: 12px }
-    .mb-14 { margin-bottom: 14px }
+    .mt-8 {
+      margin-top: 8px
+    }
+
+    .mt-12 {
+      margin-top: 12px
+    }
+
+    .mt-14 {
+      margin-top: 14px
+    }
+
+    .mt-16 {
+      margin-top: 16px
+    }
+
+    .mt-20 {
+      margin-top: 20px
+    }
+
+    .mt-24 {
+      margin-top: 24px
+    }
+
+    .mt-28 {
+      margin-top: 28px
+    }
+
+    .mt-32 {
+      margin-top: 32px
+    }
+
+    .mb-8 {
+      margin-bottom: 8px
+    }
+
+    .mb-12 {
+      margin-bottom: 12px
+    }
+
+    .mb-14 {
+      margin-bottom: 14px
+    }
 
     /* ── MODIFIER CLASSES ──────────────────────────────────── */
     /* Colour/variant overrides on existing components          */
-    .skill-num.teal     { background: var(--teal) }
-    .fw-num.teal        { background: var(--teal-pale); color: var(--teal) }
-    .seq-dot.final      { background: var(--teal); border-color: var(--teal); color: white }
-    .card.card-navy     { background: var(--navy); border-color: var(--navy) }
-    .card.card-amber    { background: var(--amber-light); border-color: var(--amber-border) }
-    .client-label.mt-10 { margin-top: 10px }
-    .client-label.mt-12 { margin-top: 12px }
-    .practice-opt.block { border-radius: var(--radius-sm); padding: 10px 14px }
-    .section-label.on-dark { color: rgba(255,255,255,0.5); margin-bottom: 8px }
-    .reflection-q.last  { margin-bottom: 0 }
-    .bonus-for.mt       { margin-top: 12px }
+    .skill-num.teal {
+      background: var(--teal)
+    }
+
+    .fw-num.teal {
+      background: var(--teal-pale);
+      color: var(--teal)
+    }
+
+    .seq-dot.final {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: white
+    }
+
+    .card.card-navy {
+      background: var(--navy);
+      border-color: var(--navy)
+    }
+
+    .card.card-amber {
+      background: var(--amber-light);
+      border-color: var(--amber-border)
+    }
+
+    .client-label.mt-10 {
+      margin-top: 10px
+    }
+
+    .client-label.mt-12 {
+      margin-top: 12px
+    }
+
+    .practice-opt.block {
+      border-radius: var(--radius-sm);
+      padding: 10px 14px
+    }
+
+    .section-label.on-dark {
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 8px
+    }
+
+    .reflection-q.last {
+      margin-bottom: 0
+    }
+
+    .bonus-for.mt {
+      margin-top: 12px
+    }
 
     /* Tap hint */
-    .tap-hint { font-size: 14px; color: var(--muted); margin-bottom: 20px; font-style: italic }
+    .tap-hint {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-style: italic
+    }
 
     /* Prompt body hint */
-    .prompt-hint { font-size: 13px; color: var(--muted); margin-bottom: 12px }
+    .prompt-hint {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 12px
+    }
 
     /* Completion page action group */
     .completion-actions {
@@ -2175,10 +2263,26 @@
     }
 
     /* Challenge example box */
-    .challenge-example { background: var(--bg); border-radius: var(--radius-sm); padding: 14px 16px }
-    .challenge-example p { font-size: 13px; color: var(--muted); margin-bottom: 4px }
-    .challenge-example p:last-child { margin-bottom: 0 }
-    .challenge-example .task { color: var(--teal); font-weight: 600 }
+    .challenge-example {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px
+    }
+
+    .challenge-example p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 4px
+    }
+
+    .challenge-example p:last-child {
+      margin-bottom: 0
+    }
+
+    .challenge-example .task {
+      color: var(--teal);
+      font-weight: 600
+    }
 
     /* ── MOBILE FIRST ───────────────────────────────────────────
        Breakpoint: ≤ 540px (single-column phone)
@@ -2218,6 +2322,15 @@
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 80px
+      }
+
+      .page-count-desktop,
+      .page-title-desktop {
+        display: none;
+      }
+
+      .page-count-mobile {
+        display: inline;
       }
 
       .btn-back {
@@ -2299,7 +2412,7 @@
       .memory-bar-label {
         font-size: 11px;
         letter-spacing: 0.1em;
-        color: rgba(255,255,255,0.48);
+        color: rgba(255, 255, 255, 0.48);
         margin-bottom: 14px;
         margin-right: 0
       }
@@ -2310,7 +2423,7 @@
 
       .memory-pill {
         display: block;
-        background: rgba(255,255,255,0.1);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: var(--radius-sm);
         padding: 10px 14px;
         font-size: 14px;
@@ -2347,99 +2460,138 @@
 
     /* ── PRINT / SAVE AS PDF (Quick Reference only) ────────── */
     @media print {
+
       .top-bar,
       .bottom-bar,
       .jump-overlay,
-      .jump-panel { display: none !important; }
+      .jump-panel {
+        display: none !important;
+      }
 
-      body { background: white; }
+      body {
+        background: white;
+      }
 
-      .page { display: none !important; }
-      #quick-reference { display: block !important; animation: none !important; }
+      .page {
+        display: none !important;
+      }
 
-      .page-content { padding: 24px; max-width: 100%; }
+      #quick-reference {
+        display: block !important;
+        animation: none !important;
+      }
 
-      .memory-bar { box-shadow: none; }
-      .good-item  { box-shadow: none; break-inside: avoid; }
-      .mini-example { break-inside: avoid; }
+      .page-content {
+        padding: 24px;
+        max-width: 100%;
+      }
 
-      #qr-print-btn { display: none !important; }
+      .memory-bar {
+        box-shadow: none;
+      }
+
+      .good-item {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      .mini-example {
+        break-inside: avoid;
+      }
+
+      #qr-print-btn {
+        display: none !important;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════
      SVG ICON SYMBOL LIBRARY
      Usage: <svg width="W" height="H"><use href="#icon-NAME"/></svg>
      Colour inherits via currentColor — set on parent or svg element.
 ════════════════════════════════════════════════════════════════ -->
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
-  <symbol id="icon-check" viewBox="0 0 10 10">
-    <path d="M2 5.5l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-check-lg" viewBox="0 0 11 11">
-    <path d="M2 5.5l2.5 2.5L9 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-check-sm" viewBox="0 0 12 12">
-    <path d="M2 6l3 3 5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-bulb" viewBox="0 0 14 14">
-    <path d="M7 2a3.5 3.5 0 0 1 2 6.4V10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8.4A3.5 3.5 0 0 1 7 2z" fill="none" stroke="currentColor" stroke-width="1.3"/>
-    <path d="M5.5 12h3" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-target" viewBox="0 0 14 14">
-    <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.3" opacity="0.6" fill="none"/>
-    <circle cx="7" cy="7" r="3"   stroke="currentColor" stroke-width="1.3" opacity="0.8" fill="none"/>
-    <circle cx="7" cy="7" r="1"   fill="currentColor"/>
-  </symbol>
-  <symbol id="icon-chevron-down" viewBox="0 0 16 16">
-    <path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-chevron-down-sm" viewBox="0 0 14 14">
-    <path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-chevron-down-md" viewBox="0 0 18 18">
-    <path d="M4.5 7L9 11.5 13.5 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-arrow-right" viewBox="0 0 14 14">
-    <path d="M5 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-arrow-right-wide" viewBox="0 0 16 16">
-    <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-arrow-right-bonus" viewBox="0 0 15 15">
-    <path d="M3 7.5h9M8 3.5l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-arrow-left" viewBox="0 0 14 14">
-    <path d="M9 3L5 7l4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-list" viewBox="0 0 14 14">
-    <path d="M2 4h10M2 7h7M2 10h5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-magnify" viewBox="0 0 20 20">
-    <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="white" stroke-width="1.5" opacity="0.85"/>
-    <line x1="12.5" y1="12.5" x2="17" y2="17" stroke="#2D8F87" stroke-width="2.2" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-circle-check" viewBox="0 0 12 12">
-    <circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" stroke-width="1.3"/>
-    <path d="M4 6l1.5 1.5L8 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="icon-print" viewBox="0 0 15 15">
-    <path d="M4 5V2h7v3M4 10H2V6h11v4h-2M4 10v3h7v-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <symbol id="icon-doc-plus" viewBox="0 0 13 13">
-    <rect x="1.5" y="1.5" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/>
-    <path d="M4 6.5h5M6.5 4v5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-  </symbol>
-</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="icon-check" viewBox="0 0 10 10">
+      <path d="M2 5.5l2 2L8 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-check-lg" viewBox="0 0 11 11">
+      <path d="M2 5.5l2.5 2.5L9 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-check-sm" viewBox="0 0 12 12">
+      <path d="M2 6l3 3 5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-bulb" viewBox="0 0 14 14">
+      <path d="M7 2a3.5 3.5 0 0 1 2 6.4V10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8.4A3.5 3.5 0 0 1 7 2z" fill="none"
+        stroke="currentColor" stroke-width="1.3" />
+      <path d="M5.5 12h3" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-target" viewBox="0 0 14 14">
+      <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.3" opacity="0.6" fill="none" />
+      <circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.3" opacity="0.8" fill="none" />
+      <circle cx="7" cy="7" r="1" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 16 16">
+      <path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-chevron-down-sm" viewBox="0 0 14 14">
+      <path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-chevron-down-md" viewBox="0 0 18 18">
+      <path d="M4.5 7L9 11.5 13.5 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 14 14">
+      <path d="M5 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-arrow-right-wide" viewBox="0 0 16 16">
+      <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-arrow-right-bonus" viewBox="0 0 15 15">
+      <path d="M3 7.5h9M8 3.5l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 14 14">
+      <path d="M9 3L5 7l4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-list" viewBox="0 0 14 14">
+      <path d="M2 4h10M2 7h7M2 10h5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-magnify" viewBox="0 0 20 20">
+      <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="white" stroke-width="1.5" opacity="0.85" />
+      <line x1="12.5" y1="12.5" x2="17" y2="17" stroke="#2D8F87" stroke-width="2.2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-circle-check" viewBox="0 0 12 12">
+      <circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" stroke-width="1.3" />
+      <path d="M4 6l1.5 1.5L8 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-print" viewBox="0 0 15 15">
+      <path d="M4 5V2h7v3M4 10H2V6h11v4h-2M4 10v3h7v-3" fill="none" stroke="currentColor" stroke-width="1.4"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-doc-plus" viewBox="0 0 13 13">
+      <rect x="1.5" y="1.5" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.3" />
+      <path d="M4 6.5h5M6.5 4v5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+    </symbol>
+  </svg>
 
   <header class="top-bar">
     <div class="top-bar-inner">
       <div class="brand">
         <div class="brand-icon">
-          <svg width="20" height="20"><use href="#icon-magnify"/></svg>
+          <svg width="20" height="20">
+            <use href="#icon-magnify" />
+          </svg>
         </div>
         <div>
           <div class="brand-name">Discovery Call Foundations</div>
@@ -2475,10 +2627,15 @@
     <!-- PAGE 1 ─ LANDING ──────────────────────────────────────── -->
     <div class="page active" id="page-1">
       <div style="text-align:center;padding:20px 0 48px">
-        <div class="page-eyebrow"><svg width="12" height="12"><use href="#icon-circle-check"/></svg> Business Communication Module</div>
+        <div class="page-eyebrow"><svg width="12" height="12">
+            <use href="#icon-circle-check" />
+          </svg> Business Communication Module</div>
         <h1 class="hero-title" style="max-width:600px;margin:0 auto 16px"><em>Discovery Call</em><br>Foundations</h1>
-        <p class="hero-sub" style="margin:0 auto 12px">Ask better questions and guide client conversations with confidence.</p>
-        <p class="hero-body" style="margin:0 auto 36px">Build the structure, language, and confidence to open discovery calls, ask useful questions, go deeper, summarise clearly, connect value, and confirm a practical next step.</p>
+        <p class="hero-sub" style="margin:0 auto 12px">Ask better questions and guide client conversations with
+          confidence.</p>
+        <p class="hero-body" style="margin:0 auto 36px">Build the structure, language, and confidence to open discovery
+          calls, ask useful questions, go deeper, summarise clearly, connect value, and confirm a practical next step.
+        </p>
         <div class="flow-visual">
           <div class="flow-step">
             <div class="flow-pill">Open</div><span class="flow-arrow">&#8594;</span>
@@ -2502,10 +2659,13 @@
             <div class="flow-pill teal">Confirm</div>
           </div>
         </div>
-        <button class="btn-primary" onclick="goToPage(2)">Start Module <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        <button class="btn-primary" onclick="goToPage(2)">Start Module <svg width="16" height="16" viewBox="0 0 16 16"
+            fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg></button>
-        <div style="margin-top:28px;font-size:13px;color:var(--muted)">3&#8211;5 lessons &nbsp;&middot;&nbsp; 19 pages &nbsp;&middot;&nbsp; Skill-based workspace</div>
+        <div style="margin-top:28px;font-size:13px;color:var(--muted)">3&#8211;5 lessons &nbsp;&middot;&nbsp; 19 pages
+          &nbsp;&middot;&nbsp; Skill-based workspace</div>
       </div>
     </div>
 
@@ -2513,43 +2673,63 @@
     <div class="page" id="page-2">
       <div class="page-eyebrow">Module Overview</div>
       <h1 class="page-title">What This Module Builds</h1>
-      <p class="page-subtitle">A discovery call is not just a list of questions. It is a guided conversation that helps both sides understand the situation more clearly.</p>
+      <p class="page-subtitle">A discovery call is not just a list of questions. It is a guided conversation that helps
+        both sides understand the situation more clearly.</p>
       <div class="two-col mt-8">
         <div>
           <div class="card">
             <div class="section-label mb-8">In this module</div>
-            <p style="font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:14px">We&#8217;ll practise how to start a discovery call, guide the conversation, ask useful questions, deepen vague answers, summarise what the client said, connect value carefully, and confirm a useful next step.</p>
-            <p style="font-size:14px;color:var(--muted);line-height:1.65">The goal is not to run through a checklist. The goal is to build a reliable way to guide client conversations while staying professional and curious.</p>
+            <p style="font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:14px">We&#8217;ll practise how to
+              start a discovery call, guide the conversation, ask useful questions, deepen vague answers, summarise what
+              the client said, connect value carefully, and confirm a useful next step.</p>
+            <p style="font-size:14px;color:var(--muted);line-height:1.65">The goal is not to run through a checklist.
+              The goal is to build a reliable way to guide client conversations while staying professional and curious.
+            </p>
           </div>
           <div class="card card-navy mt-12">
             <div class="section-label on-dark">Typical path</div>
             <div style="font-size:22px;font-weight:700;color:white;margin-bottom:4px">3&#8211;5 lessons</div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.55)">Depending on the student&#8217;s situation and how much practice is needed.</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.55)">Depending on the student&#8217;s situation and how
+              much practice is needed.</div>
           </div>
         </div>
         <div class="card">
           <div class="section-label mb-8">You&#8217;ll build</div>
           <ul class="build-list">
             <li>
-              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87"><use href="#icon-check"/></svg></div>Clearer call openings
+              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87">
+                  <use href="#icon-check" />
+                </svg></div>Clearer call openings
             </li>
             <li>
-              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87"><use href="#icon-check"/></svg></div>Better question structure
+              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87">
+                  <use href="#icon-check" />
+                </svg></div>Better question structure
             </li>
             <li>
-              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87"><use href="#icon-check"/></svg></div>Stronger follow-up questions
+              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87">
+                  <use href="#icon-check" />
+                </svg></div>Stronger follow-up questions
             </li>
             <li>
-              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87"><use href="#icon-check"/></svg></div>Less random conversation flow
+              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87">
+                  <use href="#icon-check" />
+                </svg></div>Less random conversation flow
             </li>
             <li>
-              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87"><use href="#icon-check"/></svg></div>More accurate summaries
+              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87">
+                  <use href="#icon-check" />
+                </svg></div>More accurate summaries
             </li>
             <li>
-              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87"><use href="#icon-check"/></svg></div>Better transitions from listening to value
+              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87">
+                  <use href="#icon-check" />
+                </svg></div>Better transitions from listening to value
             </li>
             <li>
-              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87"><use href="#icon-check"/></svg></div>Clearer next-step language
+              <div class="build-dot"><svg width="10" height="10" style="color:#2D8F87">
+                  <use href="#icon-check" />
+                </svg></div>Clearer next-step language
             </li>
           </ul>
         </div>
@@ -2560,7 +2740,8 @@
     <div class="page" id="page-3">
       <div class="page-eyebrow">Skill Path</div>
       <h1 class="page-title">Discovery is built one layer at a time.</h1>
-      <p class="page-subtitle">A strong discovery call is not just asking more questions. It is guiding the conversation so the client feels heard, the situation becomes clearer, and the next step feels natural.</p>
+      <p class="page-subtitle">A strong discovery call is not just asking more questions. It is guiding the conversation
+        so the client feels heard, the situation becomes clearer, and the next step feels natural.</p>
       <div class="skill-stack mt-8">
         <div class="skill-stack-item">
           <div class="skill-num">1</div>
@@ -2614,7 +2795,8 @@
       </div>
       <div class="optional-q mt-20">
         <div class="optional-q-label">Optional &#8212; quick question</div>
-        <div class="optional-q-text">Which part feels hardest: starting the call, asking questions, going deeper, summarising, explaining value, or confirming the next step?</div>
+        <div class="optional-q-text">Which part feels hardest: starting the call, asking questions, going deeper,
+          summarising, explaining value, or confirming the next step?</div>
       </div>
     </div>
 
@@ -2622,7 +2804,8 @@
     <div class="page" id="page-4">
       <div class="page-eyebrow">Core Framework</div>
       <h1 class="page-title">The Discovery Call Framework</h1>
-      <p class="page-subtitle">When a client conversation is open-ended, it is easy to become passive or jump too quickly into pitching. This structure gives the call a clear path.</p>
+      <p class="page-subtitle">When a client conversation is open-ended, it is easy to become passive or jump too
+        quickly into pitching. This structure gives the call a clear path.</p>
       <div class="framework-steps">
         <div class="fw-step">
           <div class="fw-num">1</div>
@@ -2637,7 +2820,8 @@
           <div>
             <div class="fw-label">Set Direction</div>
             <div class="fw-title">Explain how the conversation will work.</div>
-            <div class="fw-phrase">&#8220;It would be useful to understand your current situation first, then we can see what makes sense from there.&#8221;</div>
+            <div class="fw-phrase">&#8220;It would be useful to understand your current situation first, then we can see
+              what makes sense from there.&#8221;</div>
           </div>
         </div>
         <div class="fw-step">
@@ -2653,7 +2837,8 @@
           <div>
             <div class="fw-label">Deepen</div>
             <div class="fw-title">Ask follow-up questions when the answer is general.</div>
-            <div class="fw-phrase">&#8220;When you say the process is slow, what does that usually look like day to day?&#8221;</div>
+            <div class="fw-phrase">&#8220;When you say the process is slow, what does that usually look like day to
+              day?&#8221;</div>
           </div>
         </div>
         <div class="fw-step">
@@ -2677,13 +2862,15 @@
           <div>
             <div class="fw-label">Confirm</div>
             <div class="fw-title">Create a clear next step.</div>
-            <div class="fw-phrase">&#8220;Would it make sense to schedule a follow-up where we look at options?&#8221;</div>
+            <div class="fw-phrase">&#8220;Would it make sense to schedule a follow-up where we look at options?&#8221;
+            </div>
           </div>
         </div>
       </div>
       <div class="optional-q mt-16">
         <div class="optional-q-label">Framework note</div>
-        <div class="optional-q-text">You do not need to use every step perfectly every time. The framework gives you a path to follow when the conversation needs structure.</div>
+        <div class="optional-q-text">You do not need to use every step perfectly every time. The framework gives you a
+          path to follow when the conversation needs structure.</div>
       </div>
       <div class="memory-bar mt-16">
         <span class="memory-bar-label">Remember</span>
@@ -2700,11 +2887,16 @@
         <div class="client-label">Client</div>
         <div class="client-quote">&#8220;We&#8217;re having trouble keeping the team aligned on updates.&#8221;</div>
         <div class="client-label mt-10">Response</div>
-        <div class="response-text">&#8220;Thanks for sharing that. It would be useful to understand how your team manages updates today, then we can see what would make sense. When you say alignment is difficult, what usually creates the gap? So if I understand correctly, the main issue is that updates are delayed and people are working from different information. Based on that, the relevant value would be improving how updates are shared and reducing the manual follow-up. Would it make sense to look at a next step together?&#8221;</div>
+        <div class="response-text">&#8220;Thanks for sharing that. It would be useful to understand how your team
+          manages updates today, then we can see what would make sense. When you say alignment is difficult, what
+          usually creates the gap? So if I understand correctly, the main issue is that updates are delayed and people
+          are working from different information. Based on that, the relevant value would be improving how updates are
+          shared and reducing the manual follow-up. Would it make sense to look at a next step together?&#8221;</div>
       </div>
       <div class="optional-q mt-16">
         <div class="optional-q-label">Optional &#8212; quick question</div>
-        <div class="optional-q-text">Which step do you usually skip or rush when a discovery call becomes open-ended?</div>
+        <div class="optional-q-text">Which step do you usually skip or rush when a discovery call becomes open-ended?
+        </div>
       </div>
     </div>
 
@@ -2712,49 +2904,65 @@
     <div class="page" id="page-5">
       <div class="page-eyebrow">Situation Map</div>
       <h1 class="page-title">What You Are Trying to Understand</h1>
-      <p class="page-subtitle">A discovery call covers several different areas. Knowing which area you are in helps you ask better questions and avoid jumping ahead too quickly.</p>
+      <p class="page-subtitle">A discovery call covers several different areas. Knowing which area you are in helps you
+        ask better questions and avoid jumping ahead too quickly.</p>
       <p class="tap-hint">Tap a card to expand it.</p>
       <div class="discovery-grid">
         <div class="discovery-card" onclick="toggleDiscovery(this)">
           <div class="discovery-type">Current Situation</div>
           <div class="discovery-quote">&#8220;We&#8217;re using a manual process right now.&#8221;</div>
           <div class="discovery-meta"><strong>You need to learn:</strong> what is happening today.</div>
-          <div class="discovery-detail">This is usually the starting point. Before you can understand a problem, you need to understand the current state. Ask open questions and listen without jumping to solutions.<br><span class="discovery-move">Useful move: ask how it currently works</span></div>
+          <div class="discovery-detail">This is usually the starting point. Before you can understand a problem, you
+            need to understand the current state. Ask open questions and listen without jumping to solutions.<br><span
+              class="discovery-move">Useful move: ask how it currently works</span></div>
         </div>
         <div class="discovery-card" onclick="toggleDiscovery(this)">
           <div class="discovery-type">Challenge</div>
           <div class="discovery-quote">&#8220;It takes too much time.&#8221;</div>
           <div class="discovery-meta"><strong>You need to learn:</strong> what is not working.</div>
-          <div class="discovery-detail">Challenges are often described vaguely at first. Your job is to understand which part of the process creates the difficulty and why it matters to this client specifically.<br><span class="discovery-move">Useful move: ask where the difficulty appears</span></div>
+          <div class="discovery-detail">Challenges are often described vaguely at first. Your job is to understand which
+            part of the process creates the difficulty and why it matters to this client specifically.<br><span
+              class="discovery-move">Useful move: ask where the difficulty appears</span></div>
         </div>
         <div class="discovery-card" onclick="toggleDiscovery(this)">
           <div class="discovery-type">Impact</div>
           <div class="discovery-quote">&#8220;It slows the team down.&#8221;</div>
           <div class="discovery-meta"><strong>You need to learn:</strong> why the problem matters.</div>
-          <div class="discovery-detail">Impact connects the problem to the business. A client who can describe the impact of a problem is more likely to act on it. Help them articulate it by asking what happens when the problem is not resolved.<br><span class="discovery-move">Useful move: ask what the consequence is</span></div>
+          <div class="discovery-detail">Impact connects the problem to the business. A client who can describe the
+            impact of a problem is more likely to act on it. Help them articulate it by asking what happens when the
+            problem is not resolved.<br><span class="discovery-move">Useful move: ask what the consequence is</span>
+          </div>
         </div>
         <div class="discovery-card" onclick="toggleDiscovery(this)">
           <div class="discovery-type">Priority</div>
           <div class="discovery-quote">&#8220;We want to improve this soon.&#8221;</div>
           <div class="discovery-meta"><strong>You need to learn:</strong> how important it is.</div>
-          <div class="discovery-detail">Not every problem the client describes is a priority. Understanding where this sits relative to other work helps you assess whether a next step is realistic.<br><span class="discovery-move">Useful move: ask how urgent it is compared with other work</span></div>
+          <div class="discovery-detail">Not every problem the client describes is a priority. Understanding where this
+            sits relative to other work helps you assess whether a next step is realistic.<br><span
+              class="discovery-move">Useful move: ask how urgent it is compared with other work</span></div>
         </div>
         <div class="discovery-card" onclick="toggleDiscovery(this)">
           <div class="discovery-type">Decision Process</div>
           <div class="discovery-quote">&#8220;I need to involve my manager.&#8221;</div>
           <div class="discovery-meta"><strong>You need to learn:</strong> who else is involved.</div>
-          <div class="discovery-detail">Knowing the decision process early saves time. If the person you are speaking with cannot move forward alone, it is better to understand that during the discovery call than after it.<br><span class="discovery-move">Useful move: ask who should be part of the next conversation</span></div>
+          <div class="discovery-detail">Knowing the decision process early saves time. If the person you are speaking
+            with cannot move forward alone, it is better to understand that during the discovery call than after
+            it.<br><span class="discovery-move">Useful move: ask who should be part of the next conversation</span>
+          </div>
         </div>
         <div class="discovery-card" onclick="toggleDiscovery(this)">
           <div class="discovery-type">Timeline</div>
           <div class="discovery-quote">&#8220;Maybe next quarter.&#8221;</div>
           <div class="discovery-meta"><strong>You need to learn:</strong> when action might happen.</div>
-          <div class="discovery-detail">Timeline answers are often vague. A useful follow-up is to ask what would need to change for the timing to move forward, rather than accepting the vague answer.<br><span class="discovery-move">Useful move: ask what would make the timing realistic</span></div>
+          <div class="discovery-detail">Timeline answers are often vague. A useful follow-up is to ask what would need
+            to change for the timing to move forward, rather than accepting the vague answer.<br><span
+              class="discovery-move">Useful move: ask what would make the timing realistic</span></div>
         </div>
       </div>
       <div class="optional-q mt-20">
         <div class="optional-q-label">Optional &#8212; quick question</div>
-        <div class="optional-q-text">Which of these areas do you usually cover well, and which do you tend to skip?</div>
+        <div class="optional-q-text">Which of these areas do you usually cover well, and which do you tend to skip?
+        </div>
       </div>
     </div>
 
@@ -2763,16 +2971,22 @@
       <div class="skill-hero">
         <div class="skill-number-badge">Skill 1 of 7</div>
         <h1 class="skill-title">Open the Call Clearly</h1>
-        <div class="skill-key-move">Key Move: <span class="key-move-hl">Start the conversation with warmth, purpose, and control.</span></div>
+        <div class="skill-key-move">Key Move: <span class="key-move-hl">Start the conversation with warmth, purpose, and
+            control.</span></div>
       </div>
       <div class="two-col">
         <div>
           <div class="info-block">
             <div class="info-block-label">Why this matters</div>
-            <div class="info-block-text">If the opening is vague, the client may not know what kind of conversation they are in. A clear opening helps the client relax and shows that you can guide the call professionally. Many students rush past the opening because they are eager to ask questions. But a weak opening makes the whole call feel unstructured from the start.</div>
+            <div class="info-block-text">If the opening is vague, the client may not know what kind of conversation they
+              are in. A clear opening helps the client relax and shows that you can guide the call professionally. Many
+              students rush past the opening because they are eager to ask questions. But a weak opening makes the whole
+              call feel unstructured from the start.</div>
           </div>
           <div class="principle-block">
-            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A"><use href="#icon-bulb"/></svg></div>
+            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A">
+                <use href="#icon-bulb" />
+              </svg></div>
             <div class="principle-text">Start warm, then give direction.</div>
           </div>
         </div>
@@ -2781,8 +2995,10 @@
           <div class="phrase-chips">
             <div class="phrase-chip">&#8220;Thanks for taking the time today.&#8221;</div>
             <div class="phrase-chip">&#8220;It&#8217;s good to speak with you.&#8221;</div>
-            <div class="phrase-chip">&#8220;I&#8217;m looking forward to learning more about your situation.&#8221;</div>
-            <div class="phrase-chip">&#8220;To start, it would be useful to understand where things are now.&#8221;</div>
+            <div class="phrase-chip">&#8220;I&#8217;m looking forward to learning more about your situation.&#8221;
+            </div>
+            <div class="phrase-chip">&#8220;To start, it would be useful to understand where things are now.&#8221;
+            </div>
           </div>
         </div>
       </div>
@@ -2795,7 +3011,8 @@
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
-            <div class="ws-text">&#8220;Thanks for taking the time today. To start, it would be useful to understand your current situation and what you&#8217;re hoping to improve.&#8221;</div>
+            <div class="ws-text">&#8220;Thanks for taking the time today. To start, it would be useful to understand
+              your current situation and what you&#8217;re hoping to improve.&#8221;</div>
           </div>
         </div>
       </div>
@@ -2807,7 +3024,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -2815,7 +3033,8 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;Hi, thanks for setting this up.&#8221;</div>
           <div class="client-label mt-10">Model response</div>
-          <div class="response-text">&#8220;Thanks for joining. I&#8217;d like to understand your situation first, then we can look at what would be useful to discuss.&#8221;</div>
+          <div class="response-text">&#8220;Thanks for joining. I&#8217;d like to understand your situation first, then
+            we can look at what would be useful to discuss.&#8221;</div>
         </div>
       </div>
       <div class="practice-section">
@@ -2827,28 +3046,35 @@
         <div class="practice-pane active" id="p6-c">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;Hi, thanks for taking the call.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Open the call with warmth and a clear sense of purpose. Do not ask a question yet.</div>
+            <div class="practice-task"><strong>Task:</strong> Open the call with warmth and a clear sense of purpose. Do
+              not ask a question yet.</div>
           </div>
         </div>
         <div class="practice-pane" id="p6-a">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;Hi, we only have about 20 minutes today.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Open the call professionally and set a calm tone even with a time constraint.</div>
+            <div class="practice-task"><strong>Task:</strong> Open the call professionally and set a calm tone even with
+              a time constraint.</div>
           </div>
         </div>
         <div class="practice-pane" id="p6-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;Hi, I have to be honest &#8212; I&#8217;m not sure why this call was set up.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client sounds uncertain. Open the call in a way that creates confidence and direction without sounding defensive.</div>
+            <div class="practice-prompt">&#8220;Hi, I have to be honest &#8212; I&#8217;m not sure why this call was set
+              up.&#8221;</div>
+            <div class="practice-task"><strong>Challenge:</strong> The client sounds uncertain. Open the call in a way
+              that creates confidence and direction without sounding defensive.</div>
           </div>
         </div>
       </div>
       <div class="quick-recap">
-        <div class="recap-icon"><svg width="14" height="14" style="color:white"><use href="#icon-target"/></svg></div>
+        <div class="recap-icon"><svg width="14" height="14" style="color:white">
+            <use href="#icon-target" />
+          </svg></div>
         <div>
           <div class="recap-label">Quick Recap</div>
           <div class="recap-text">A strong call starts before the first question.</div>
-          <div class="recap-phrase">&#8220;To start, it would be useful to understand your current situation.&#8221;</div>
+          <div class="recap-phrase">&#8220;To start, it would be useful to understand your current situation.&#8221;
+          </div>
         </div>
       </div>
     </div>
@@ -2858,16 +3084,22 @@
       <div class="skill-hero">
         <div class="skill-number-badge">Skill 2 of 7</div>
         <h1 class="skill-title">Set Direction</h1>
-        <div class="skill-key-move">Key Move: <span class="key-move-hl">Give the conversation a simple path before asking questions.</span></div>
+        <div class="skill-key-move">Key Move: <span class="key-move-hl">Give the conversation a simple path before
+            asking questions.</span></div>
       </div>
       <div class="two-col">
         <div>
           <div class="info-block">
             <div class="info-block-label">Why this matters</div>
-            <div class="info-block-text">Without direction, discovery can feel like random questioning. When a student jumps straight into questions without setting direction, the client may feel interrogated rather than guided. A simple structure statement tells the client what is about to happen, why you are asking questions, and where the conversation is heading. This one move changes the tone of the entire call.</div>
+            <div class="info-block-text">Without direction, discovery can feel like random questioning. When a student
+              jumps straight into questions without setting direction, the client may feel interrogated rather than
+              guided. A simple structure statement tells the client what is about to happen, why you are asking
+              questions, and where the conversation is heading. This one move changes the tone of the entire call.</div>
           </div>
           <div class="principle-block">
-            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A"><use href="#icon-bulb"/></svg></div>
+            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A">
+                <use href="#icon-bulb" />
+              </svg></div>
             <div class="principle-text">Give the client a map.</div>
           </div>
         </div>
@@ -2875,7 +3107,8 @@
           <div class="info-block-label">Useful language</div>
           <div class="phrase-chips">
             <div class="phrase-chip">&#8220;Maybe we can start with your current situation.&#8221;</div>
-            <div class="phrase-chip">&#8220;Then I&#8217;ll ask a few questions to understand the priorities.&#8221;</div>
+            <div class="phrase-chip">&#8220;Then I&#8217;ll ask a few questions to understand the priorities.&#8221;
+            </div>
             <div class="phrase-chip">&#8220;After that, we can see what would make sense as a next step.&#8221;</div>
             <div class="phrase-chip">&#8220;Does that sound okay?&#8221;</div>
           </div>
@@ -2890,7 +3123,9 @@
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
-            <div class="ws-text">&#8220;Maybe we can start with your current situation, then I&#8217;ll ask a few questions to understand the priorities. After that, we can see what would make sense as a next step.&#8221;</div>
+            <div class="ws-text">&#8220;Maybe we can start with your current situation, then I&#8217;ll ask a few
+              questions to understand the priorities. After that, we can see what would make sense as a next
+              step.&#8221;</div>
           </div>
         </div>
       </div>
@@ -2902,7 +3137,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -2910,7 +3146,8 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;How does this call usually work?&#8221;</div>
           <div class="client-label mt-10">Model response</div>
-          <div class="response-text">&#8220;We can keep it simple. I&#8217;ll first understand what&#8217;s happening on your side, then we can look at whether there&#8217;s a useful next step.&#8221;</div>
+          <div class="response-text">&#8220;We can keep it simple. I&#8217;ll first understand what&#8217;s happening on
+            your side, then we can look at whether there&#8217;s a useful next step.&#8221;</div>
         </div>
       </div>
       <div class="practice-section">
@@ -2922,28 +3159,35 @@
         <div class="practice-pane active" id="p7-c">
           <div class="practice-card">
             <div class="practice-prompt">The client has just joined the call.</div>
-            <div class="practice-task"><strong>Task:</strong> Set a simple direction for the conversation in two or three sentences.</div>
+            <div class="practice-task"><strong>Task:</strong> Set a simple direction for the conversation in two or
+              three sentences.</div>
           </div>
         </div>
         <div class="practice-pane" id="p7-a">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;I&#8217;m not sure exactly what you offer.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Set direction in a way that also gently reassures the client without over-explaining.</div>
+            <div class="practice-task"><strong>Task:</strong> Set direction in a way that also gently reassures the
+              client without over-explaining.</div>
           </div>
         </div>
         <div class="practice-pane" id="p7-r">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;Can we just get to the point?&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client sounds impatient. Set direction quickly and confidently without sounding rushed.</div>
+            <div class="practice-task"><strong>Challenge:</strong> The client sounds impatient. Set direction quickly
+              and confidently without sounding rushed.</div>
           </div>
         </div>
       </div>
       <div class="quick-recap">
-        <div class="recap-icon"><svg width="14" height="14" style="color:white"><use href="#icon-target"/></svg></div>
+        <div class="recap-icon"><svg width="14" height="14" style="color:white">
+            <use href="#icon-target" />
+          </svg></div>
         <div>
           <div class="recap-label">Quick Recap</div>
-          <div class="recap-text">The client should know where the conversation is going before you ask your first question.</div>
-          <div class="recap-phrase">&#8220;Maybe we can start with your current situation, then see what would make sense from there.&#8221;</div>
+          <div class="recap-text">The client should know where the conversation is going before you ask your first
+            question.</div>
+          <div class="recap-phrase">&#8220;Maybe we can start with your current situation, then see what would make
+            sense from there.&#8221;</div>
         </div>
       </div>
     </div>
@@ -2953,16 +3197,23 @@
       <div class="skill-hero">
         <div class="skill-number-badge">Skill 3 of 7</div>
         <h1 class="skill-title">Ask Useful Discovery Questions</h1>
-        <div class="skill-key-move">Key Move: <span class="key-move-hl">Ask questions that reveal the client&#8217;s situation, problem, priority, and goal.</span></div>
+        <div class="skill-key-move">Key Move: <span class="key-move-hl">Ask questions that reveal the client&#8217;s
+            situation, problem, priority, and goal.</span></div>
       </div>
       <div class="two-col">
         <div>
           <div class="info-block">
             <div class="info-block-label">Why this matters</div>
-            <div class="info-block-text">Generic questions create generic answers. Better questions help the client explain what actually matters, not just what they think they want to buy. A student who only asks &#8220;What do you need?&#8221; will get surface-level answers. A student who asks about the current situation, what is working, what is not working, and what a better situation would look like will understand the client&#8217;s real context.</div>
+            <div class="info-block-text">Generic questions create generic answers. Better questions help the client
+              explain what actually matters, not just what they think they want to buy. A student who only asks
+              &#8220;What do you need?&#8221; will get surface-level answers. A student who asks about the current
+              situation, what is working, what is not working, and what a better situation would look like will
+              understand the client&#8217;s real context.</div>
           </div>
           <div class="principle-block">
-            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A"><use href="#icon-bulb"/></svg></div>
+            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A">
+                <use href="#icon-bulb" />
+              </svg></div>
             <div class="principle-text">Understand before you recommend.</div>
           </div>
         </div>
@@ -2986,7 +3237,8 @@
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
-            <div class="ws-text">&#8220;Can you tell me what you&#8217;re trying to improve and how you&#8217;re handling it currently?&#8221;</div>
+            <div class="ws-text">&#8220;Can you tell me what you&#8217;re trying to improve and how you&#8217;re
+              handling it currently?&#8221;</div>
           </div>
         </div>
       </div>
@@ -2998,7 +3250,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -3006,7 +3259,8 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;We&#8217;re looking for a better system.&#8221;</div>
           <div class="client-label mt-10">Model response</div>
-          <div class="response-text">&#8220;That makes sense. Can you tell me what you&#8217;re using now and what you&#8217;re hoping a better system would improve?&#8221;</div>
+          <div class="response-text">&#8220;That makes sense. Can you tell me what you&#8217;re using now and what
+            you&#8217;re hoping a better system would improve?&#8221;</div>
         </div>
       </div>
       <div class="practice-section">
@@ -3018,28 +3272,34 @@
         <div class="practice-pane active" id="p8-c">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;We&#8217;re looking for a better solution.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Ask two useful discovery questions that help you understand the client&#8217;s current situation and what they want to improve.</div>
+            <div class="practice-task"><strong>Task:</strong> Ask two useful discovery questions that help you
+              understand the client&#8217;s current situation and what they want to improve.</div>
           </div>
         </div>
         <div class="practice-pane" id="p8-a">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;We&#8217;ve been having some issues internally.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Ask questions that help the client describe the problem without feeling pressured.</div>
+            <div class="practice-task"><strong>Task:</strong> Ask questions that help the client describe the problem
+              without feeling pressured.</div>
           </div>
         </div>
         <div class="practice-pane" id="p8-r">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;We&#8217;re just exploring options right now.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is giving very little away. Ask questions that open the conversation without making them feel committed.</div>
+            <div class="practice-task"><strong>Challenge:</strong> The client is giving very little away. Ask questions
+              that open the conversation without making them feel committed.</div>
           </div>
         </div>
       </div>
       <div class="quick-recap">
-        <div class="recap-icon"><svg width="14" height="14" style="color:white"><use href="#icon-target"/></svg></div>
+        <div class="recap-icon"><svg width="14" height="14" style="color:white">
+            <use href="#icon-target" />
+          </svg></div>
         <div>
           <div class="recap-label">Quick Recap</div>
           <div class="recap-text">A better question leads to a better conversation.</div>
-          <div class="recap-phrase">&#8220;Can you tell me what you&#8217;re trying to improve and how you&#8217;re handling it currently?&#8221;</div>
+          <div class="recap-phrase">&#8220;Can you tell me what you&#8217;re trying to improve and how you&#8217;re
+            handling it currently?&#8221;</div>
         </div>
       </div>
     </div>
@@ -3049,16 +3309,22 @@
       <div class="skill-hero">
         <div class="skill-number-badge">Skill 4 of 7</div>
         <h1 class="skill-title">Deepen Vague Answers</h1>
-        <div class="skill-key-move">Key Move: <span class="key-move-hl">Turn general answers into specific, useful detail.</span></div>
+        <div class="skill-key-move">Key Move: <span class="key-move-hl">Turn general answers into specific, useful
+            detail.</span></div>
       </div>
       <div class="two-col">
         <div>
           <div class="info-block">
             <div class="info-block-label">Why this matters</div>
-            <div class="info-block-text">Clients often begin with broad language: &#8220;It&#8217;s inefficient,&#8221; &#8220;we need better visibility,&#8221; or &#8220;the process is slow.&#8221; If you accept that too quickly, you may miss the real issue. Deepening is not interrogating. It is showing genuine curiosity and helping the client articulate something they may not have fully thought through themselves.</div>
+            <div class="info-block-text">Clients often begin with broad language: &#8220;It&#8217;s inefficient,&#8221;
+              &#8220;we need better visibility,&#8221; or &#8220;the process is slow.&#8221; If you accept that too
+              quickly, you may miss the real issue. Deepening is not interrogating. It is showing genuine curiosity and
+              helping the client articulate something they may not have fully thought through themselves.</div>
           </div>
           <div class="principle-block">
-            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A"><use href="#icon-bulb"/></svg></div>
+            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A">
+                <use href="#icon-bulb" />
+              </svg></div>
             <div class="principle-text">Do not stop at the first answer.</div>
           </div>
         </div>
@@ -3082,7 +3348,8 @@
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
-            <div class="ws-text">&#8220;When you say the process is inefficient, what does that usually look like in practice?&#8221;</div>
+            <div class="ws-text">&#8220;When you say the process is inefficient, what does that usually look like in
+              practice?&#8221;</div>
           </div>
         </div>
       </div>
@@ -3094,7 +3361,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -3102,7 +3370,8 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;The process is just too slow.&#8221;</div>
           <div class="client-label mt-10">Model response</div>
-          <div class="response-text">&#8220;When you say too slow, what part of the process usually creates the delay?&#8221;</div>
+          <div class="response-text">&#8220;When you say too slow, what part of the process usually creates the
+            delay?&#8221;</div>
         </div>
       </div>
       <div class="practice-section">
@@ -3114,24 +3383,31 @@
         <div class="practice-pane active" id="p9-c">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;It&#8217;s just not very efficient.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Ask one deepening question that turns this vague answer into something specific.</div>
+            <div class="practice-task"><strong>Task:</strong> Ask one deepening question that turns this vague answer
+              into something specific.</div>
           </div>
         </div>
         <div class="practice-pane" id="p9-a">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;We need better visibility across the team.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Ask follow-up questions that help the client explain what visibility means to them and where it breaks down.</div>
+            <div class="practice-task"><strong>Task:</strong> Ask follow-up questions that help the client explain what
+              visibility means to them and where it breaks down.</div>
           </div>
         </div>
         <div class="practice-pane" id="p9-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;It&#8217;s hard to explain. It just doesn&#8217;t work well.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is struggling to articulate the problem. Ask a gentle deepening question that helps them find the right words without making them feel uncomfortable.</div>
+            <div class="practice-prompt">&#8220;It&#8217;s hard to explain. It just doesn&#8217;t work well.&#8221;
+            </div>
+            <div class="practice-task"><strong>Challenge:</strong> The client is struggling to articulate the problem.
+              Ask a gentle deepening question that helps them find the right words without making them feel
+              uncomfortable.</div>
           </div>
         </div>
       </div>
       <div class="quick-recap">
-        <div class="recap-icon"><svg width="14" height="14" style="color:white"><use href="#icon-target"/></svg></div>
+        <div class="recap-icon"><svg width="14" height="14" style="color:white">
+            <use href="#icon-target" />
+          </svg></div>
         <div>
           <div class="recap-label">Quick Recap</div>
           <div class="recap-text">The real issue is usually one question deeper than the first answer.</div>
@@ -3145,16 +3421,22 @@
       <div class="skill-hero">
         <div class="skill-number-badge">Skill 5 of 7</div>
         <h1 class="skill-title">Summarise What You Heard</h1>
-        <div class="skill-key-move">Key Move: <span class="key-move-hl">Reflect the client&#8217;s situation back before moving forward.</span></div>
+        <div class="skill-key-move">Key Move: <span class="key-move-hl">Reflect the client&#8217;s situation back before
+            moving forward.</span></div>
       </div>
       <div class="two-col">
         <div>
           <div class="info-block">
             <div class="info-block-label">Why this matters</div>
-            <div class="info-block-text">A summary shows the client they were heard. It also helps you check accuracy before you connect value or suggest a next step. Many students skip the summary because they are eager to move forward. But a good summary builds trust, confirms understanding, and creates a natural transition to the next part of the conversation.</div>
+            <div class="info-block-text">A summary shows the client they were heard. It also helps you check accuracy
+              before you connect value or suggest a next step. Many students skip the summary because they are eager to
+              move forward. But a good summary builds trust, confirms understanding, and creates a natural transition to
+              the next part of the conversation.</div>
           </div>
           <div class="principle-block">
-            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A"><use href="#icon-bulb"/></svg></div>
+            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A">
+                <use href="#icon-bulb" />
+              </svg></div>
             <div class="principle-text">Summarise before you recommend.</div>
           </div>
         </div>
@@ -3178,7 +3460,8 @@
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
-            <div class="ws-text">&#8220;So if I understand correctly, your team is losing time because the current process requires too much manual follow-up. Is that accurate?&#8221;</div>
+            <div class="ws-text">&#8220;So if I understand correctly, your team is losing time because the current
+              process requires too much manual follow-up. Is that accurate?&#8221;</div>
           </div>
         </div>
       </div>
@@ -3190,7 +3473,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -3198,7 +3482,8 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;We waste a lot of time chasing updates manually.&#8221;</div>
           <div class="client-label mt-10">Model response</div>
-          <div class="response-text">&#8220;So the main issue is not only the manual work, but the delays it creates for the team. Is that right?&#8221;</div>
+          <div class="response-text">&#8220;So the main issue is not only the manual work, but the delays it creates for
+            the team. Is that right?&#8221;</div>
         </div>
       </div>
       <div class="practice-section">
@@ -3210,24 +3495,31 @@
         <div class="practice-pane active" id="p10-c">
           <div class="practice-card">
             <div class="practice-prompt">The client has just explained their situation.</div>
-            <div class="practice-task"><strong>Task:</strong> Summarise what you heard in two sentences and check accuracy.</div>
+            <div class="practice-task"><strong>Task:</strong> Summarise what you heard in two sentences and check
+              accuracy.</div>
           </div>
         </div>
         <div class="practice-pane" id="p10-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;We have a few issues but the main one is the reporting. It takes too long and the data is never up to date.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Summarise the client&#8217;s situation clearly and confirm before moving forward.</div>
+            <div class="practice-prompt">&#8220;We have a few issues but the main one is the reporting. It takes too
+              long and the data is never up to date.&#8221;</div>
+            <div class="practice-task"><strong>Task:</strong> Summarise the client&#8217;s situation clearly and confirm
+              before moving forward.</div>
           </div>
         </div>
         <div class="practice-pane" id="p10-r">
           <div class="practice-card">
-            <div class="practice-prompt">The client has given a long, detailed answer covering several different problems.</div>
-            <div class="practice-task"><strong>Challenge:</strong> Summarise the most important point without losing the other details, and check that your summary is accurate.</div>
+            <div class="practice-prompt">The client has given a long, detailed answer covering several different
+              problems.</div>
+            <div class="practice-task"><strong>Challenge:</strong> Summarise the most important point without losing the
+              other details, and check that your summary is accurate.</div>
           </div>
         </div>
       </div>
       <div class="quick-recap">
-        <div class="recap-icon"><svg width="14" height="14" style="color:white"><use href="#icon-target"/></svg></div>
+        <div class="recap-icon"><svg width="14" height="14" style="color:white">
+            <use href="#icon-target" />
+          </svg></div>
         <div>
           <div class="recap-label">Quick Recap</div>
           <div class="recap-text">A good summary is the bridge between listening and recommending.</div>
@@ -3241,16 +3533,22 @@
       <div class="skill-hero">
         <div class="skill-number-badge">Skill 6 of 7</div>
         <h1 class="skill-title">Connect Value Carefully</h1>
-        <div class="skill-key-move">Key Move: <span class="key-move-hl">Link value to what the client actually said.</span></div>
+        <div class="skill-key-move">Key Move: <span class="key-move-hl">Link value to what the client actually
+            said.</span></div>
       </div>
       <div class="two-col">
         <div>
           <div class="info-block">
             <div class="info-block-label">Why this matters</div>
-            <div class="info-block-text">If you pitch too early, the client may feel sold to instead of understood. A stronger value connection starts from the client&#8217;s own problem, not from a generic feature list. The difference between a pitch and a value connection is simple: a pitch starts with your solution, a value connection starts with their problem.</div>
+            <div class="info-block-text">If you pitch too early, the client may feel sold to instead of understood. A
+              stronger value connection starts from the client&#8217;s own problem, not from a generic feature list. The
+              difference between a pitch and a value connection is simple: a pitch starts with your solution, a value
+              connection starts with their problem.</div>
           </div>
           <div class="principle-block">
-            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A"><use href="#icon-bulb"/></svg></div>
+            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A">
+                <use href="#icon-bulb" />
+              </svg></div>
             <div class="principle-text">Use their words before your solution.</div>
           </div>
         </div>
@@ -3274,7 +3572,8 @@
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
-            <div class="ws-text">&#8220;Based on what you described, the relevant part is reducing manual follow-up so your team can get updates faster.&#8221;</div>
+            <div class="ws-text">&#8220;Based on what you described, the relevant part is reducing manual follow-up so
+              your team can get updates faster.&#8221;</div>
           </div>
         </div>
       </div>
@@ -3286,7 +3585,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -3294,7 +3594,8 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;We spend too much time following up manually.&#8221;</div>
           <div class="client-label mt-10">Model response</div>
-          <div class="response-text">&#8220;Based on that, the most relevant value is reducing the manual follow-up so your team can spend less time chasing updates.&#8221;</div>
+          <div class="response-text">&#8220;Based on that, the most relevant value is reducing the manual follow-up so
+            your team can spend less time chasing updates.&#8221;</div>
         </div>
       </div>
       <div class="practice-section">
@@ -3306,24 +3607,31 @@
         <div class="practice-pane active" id="p11-c">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;We spend hours every week on manual reporting.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Connect value to this specific problem without listing features.</div>
+            <div class="practice-task"><strong>Task:</strong> Connect value to this specific problem without listing
+              features.</div>
           </div>
         </div>
         <div class="practice-pane" id="p11-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;The team is always waiting for updates before they can move forward.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Connect value in a way that uses the client&#8217;s own language and addresses the delay they described.</div>
+            <div class="practice-prompt">&#8220;The team is always waiting for updates before they can move
+              forward.&#8221;</div>
+            <div class="practice-task"><strong>Task:</strong> Connect value in a way that uses the client&#8217;s own
+              language and addresses the delay they described.</div>
           </div>
         </div>
         <div class="practice-pane" id="p11-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;I&#8217;m not sure your solution is really that different from what we already have.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is skeptical. Connect value specifically to the problem they described without sounding defensive.</div>
+            <div class="practice-prompt">&#8220;I&#8217;m not sure your solution is really that different from what we
+              already have.&#8221;</div>
+            <div class="practice-task"><strong>Challenge:</strong> The client is skeptical. Connect value specifically
+              to the problem they described without sounding defensive.</div>
           </div>
         </div>
       </div>
       <div class="quick-recap">
-        <div class="recap-icon"><svg width="14" height="14" style="color:white"><use href="#icon-target"/></svg></div>
+        <div class="recap-icon"><svg width="14" height="14" style="color:white">
+            <use href="#icon-target" />
+          </svg></div>
         <div>
           <div class="recap-label">Quick Recap</div>
           <div class="recap-text">Value only lands when it connects to something the client actually said.</div>
@@ -3337,16 +3645,22 @@
       <div class="skill-hero">
         <div class="skill-number-badge">Skill 7 of 7</div>
         <h1 class="skill-title">Confirm the Next Step</h1>
-        <div class="skill-key-move">Key Move: <span class="key-move-hl">End the call with a clear next step.</span></div>
+        <div class="skill-key-move">Key Move: <span class="key-move-hl">End the call with a clear next step.</span>
+        </div>
       </div>
       <div class="two-col">
         <div>
           <div class="info-block">
             <div class="info-block-label">Why this matters</div>
-            <div class="info-block-text">A discovery call can go well and still end weakly if the next step is unclear. Confirming the next step helps both sides know what will happen after the call. Many students let a good conversation drift to a weak ending because they feel uncomfortable proposing a next step. A clear next step is not pushy &#8212; it is professional.</div>
+            <div class="info-block-text">A discovery call can go well and still end weakly if the next step is unclear.
+              Confirming the next step helps both sides know what will happen after the call. Many students let a good
+              conversation drift to a weak ending because they feel uncomfortable proposing a next step. A clear next
+              step is not pushy &#8212; it is professional.</div>
           </div>
           <div class="principle-block">
-            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A"><use href="#icon-bulb"/></svg></div>
+            <div class="principle-icon"><svg width="14" height="14" style="color:#C8843A">
+                <use href="#icon-bulb" />
+              </svg></div>
             <div class="principle-text">Do not let a good conversation end vaguely.</div>
           </div>
         </div>
@@ -3370,7 +3684,8 @@
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
-            <div class="ws-text">&#8220;I can send a short summary. Would it also make sense to schedule a follow-up so we can review the options together?&#8221;</div>
+            <div class="ws-text">&#8220;I can send a short summary. Would it also make sense to schedule a follow-up so
+              we can review the options together?&#8221;</div>
           </div>
         </div>
       </div>
@@ -3382,7 +3697,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -3390,7 +3706,8 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;Can you send me something after the call?&#8221;</div>
           <div class="client-label mt-10">Model response</div>
-          <div class="response-text">&#8220;Of course. I&#8217;ll send a short summary. Would it also be useful to schedule a follow-up so we can go through any questions together?&#8221;</div>
+          <div class="response-text">&#8220;Of course. I&#8217;ll send a short summary. Would it also be useful to
+            schedule a follow-up so we can go through any questions together?&#8221;</div>
         </div>
       </div>
       <div class="practice-section">
@@ -3407,23 +3724,29 @@
         </div>
         <div class="practice-pane" id="p12-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;I&#8217;ll need to speak with my manager before we go further.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Confirm the next step in a way that keeps momentum and includes the manager naturally.</div>
+            <div class="practice-prompt">&#8220;I&#8217;ll need to speak with my manager before we go further.&#8221;
+            </div>
+            <div class="practice-task"><strong>Task:</strong> Confirm the next step in a way that keeps momentum and
+              includes the manager naturally.</div>
           </div>
         </div>
         <div class="practice-pane" id="p12-r">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;Let me think about it and get back to you.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is slowing down. Propose a specific next step that gives them a reason to say yes rather than waiting.</div>
+            <div class="practice-task"><strong>Challenge:</strong> The client is slowing down. Propose a specific next
+              step that gives them a reason to say yes rather than waiting.</div>
           </div>
         </div>
       </div>
       <div class="quick-recap">
-        <div class="recap-icon"><svg width="14" height="14" style="color:white"><use href="#icon-target"/></svg></div>
+        <div class="recap-icon"><svg width="14" height="14" style="color:white">
+            <use href="#icon-target" />
+          </svg></div>
         <div>
           <div class="recap-label">Quick Recap</div>
           <div class="recap-text">A good call deserves a clear ending.</div>
-          <div class="recap-phrase">&#8220;Would it make sense to schedule a follow-up where we look at the options together?&#8221;</div>
+          <div class="recap-phrase">&#8220;Would it make sense to schedule a follow-up where we look at the options
+            together?&#8221;</div>
         </div>
       </div>
     </div>
@@ -3432,7 +3755,8 @@
     <div class="page" id="page-13">
       <div class="page-eyebrow">Integration</div>
       <h1 class="page-title">Put the Discovery Call Together</h1>
-      <p class="page-subtitle">A strong discovery call does not need to sound scripted. It should feel guided, curious, and clear.</p>
+      <p class="page-subtitle">A strong discovery call does not need to sound scripted. It should feel guided, curious,
+        and clear.</p>
 
       <div class="sequence-steps mt-8">
         <div class="seq-step">
@@ -3452,7 +3776,8 @@
           </div>
           <div class="seq-content">
             <div class="seq-label">Set Direction</div>
-            <div class="seq-phrase">&#8220;Maybe we can start with your current situation, then see what makes sense from there.&#8221;</div>
+            <div class="seq-phrase">&#8220;Maybe we can start with your current situation, then see what makes sense
+              from there.&#8221;</div>
           </div>
         </div>
         <div class="seq-step">
@@ -3508,13 +3833,19 @@
 
       <div class="card mt-20">
         <div class="section-label mb-8">Practice prompt</div>
-        <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px">Choose a client situation and practise the full sequence: Open → Set Direction → Discover → Deepen → Summarise → Connect → Confirm.</p>
+        <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px">Choose a client situation and practise the
+          full sequence: Open → Set Direction → Discover → Deepen → Summarise → Connect → Confirm.</p>
         <div class="practice-options">
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re looking for a better way to manage team updates.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;Our current process is too slow.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re not sure exactly what we need yet.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re comparing a few options.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We just want to see a demo.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re looking for a better
+            way to manage team updates.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;Our current process is too
+            slow.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re not sure exactly what
+            we need yet.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re comparing a few
+            options.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We just want to see a
+            demo.&#8221;</div>
         </div>
       </div>
 
@@ -3526,7 +3857,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -3534,7 +3866,13 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;We need something better.&#8221;</div>
           <div class="client-label mt-10">Full sequence response</div>
-          <div class="response-text">&#8220;Thanks for that. Maybe we can start with how things work today, then see what would make sense from there. When you say you need something better, what part of the current process creates the most difficulty? I want to make sure I understand before suggesting anything. So if I understand correctly, the main issue is that the current process is slow and the team ends up doing a lot of manual work to compensate. Based on that, the relevant value would be reducing that manual effort and giving the team a faster way to stay aligned. Would it make sense to schedule a short follow-up where we look at what that could look like?&#8221;</div>
+          <div class="response-text">&#8220;Thanks for that. Maybe we can start with how things work today, then see
+            what would make sense from there. When you say you need something better, what part of the current process
+            creates the most difficulty? I want to make sure I understand before suggesting anything. So if I understand
+            correctly, the main issue is that the current process is slow and the team ends up doing a lot of manual
+            work to compensate. Based on that, the relevant value would be reducing that manual effort and giving the
+            team a faster way to stay aligned. Would it make sense to schedule a short follow-up where we look at what
+            that could look like?&#8221;</div>
         </div>
       </div>
 
@@ -3546,7 +3884,8 @@
           </div>
           <div class="toggle-chevron">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3 5l4 4 4-4" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
           </div>
         </div>
@@ -3554,13 +3893,20 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;We&#8217;re just having some internal issues.&#8221;</div>
           <div class="client-label mt-10">Full sequence response</div>
-          <div class="response-text">&#8220;I understand. It would be useful to understand the situation a bit better. Can you tell me what area the issues are appearing in &#8212; is it more about how the team communicates, how work is tracked, or something else? When you say the process is unclear, what does that usually look like in practice? So it sounds like the main issue is that people are not always sure what the current status is, and that creates delays and confusion. Based on that, the most relevant value would be improving visibility so the team always knows where things stand. Would it be useful to look at how that could work in a follow-up call?&#8221;</div>
+          <div class="response-text">&#8220;I understand. It would be useful to understand the situation a bit better.
+            Can you tell me what area the issues are appearing in &#8212; is it more about how the team communicates,
+            how work is tracked, or something else? When you say the process is unclear, what does that usually look
+            like in practice? So it sounds like the main issue is that people are not always sure what the current
+            status is, and that creates delays and confusion. Based on that, the most relevant value would be improving
+            visibility so the team always knows where things stand. Would it be useful to look at how that could work in
+            a follow-up call?&#8221;</div>
         </div>
       </div>
 
       <div class="card card-amber mt-16">
         <div class="section-label" style="color:var(--amber);margin-bottom:8px">Make It More Realistic</div>
-        <p style="font-size:14px;color:var(--amber);font-weight:600">Try the full sequence again but keep the entire conversation under 3 minutes.</p>
+        <p style="font-size:14px;color:var(--amber);font-weight:600">Try the full sequence again but keep the entire
+          conversation under 3 minutes.</p>
       </div>
     </div>
 
@@ -3568,42 +3914,56 @@
     <div class="page" id="page-14">
       <div class="page-eyebrow">Reference</div>
       <h1 class="page-title">Language Bank</h1>
-      <p class="page-subtitle">Use this page to find useful phrases quickly. Most phrases are practised inside the skill pages.</p>
+      <p class="page-subtitle">Use this page to find useful phrases quickly. Most phrases are practised inside the skill
+        pages.</p>
       <div class="lang-accordion mt-8">
         <div class="lang-group">
           <div class="lang-group-header" onclick="toggleLangGroup(this)">
-            <div><span class="lang-group-title">Opening the Call</span><span class="lang-group-count">5 phrases</span></div>
-            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280"><use href="#icon-chevron-down"/></svg>
+            <div><span class="lang-group-title">Opening the Call</span><span class="lang-group-count">5 phrases</span>
+            </div>
+            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280">
+              <use href="#icon-chevron-down" />
+            </svg>
           </div>
           <div class="lang-group-body">
             <div class="lang-phrase-list">
               <div class="lang-phrase">&#8220;Thanks for taking the time today.&#8221;</div>
               <div class="lang-phrase">&#8220;It&#8217;s good to speak with you.&#8221;</div>
-              <div class="lang-phrase">&#8220;I&#8217;m looking forward to learning more about your situation.&#8221;</div>
-              <div class="lang-phrase">&#8220;To start, it would be useful to understand where things are now.&#8221;</div>
-              <div class="lang-phrase">&#8220;Before we look at anything specific, it would help to understand your current situation.&#8221;</div>
+              <div class="lang-phrase">&#8220;I&#8217;m looking forward to learning more about your situation.&#8221;
+              </div>
+              <div class="lang-phrase">&#8220;To start, it would be useful to understand where things are now.&#8221;
+              </div>
+              <div class="lang-phrase">&#8220;Before we look at anything specific, it would help to understand your
+                current situation.&#8221;</div>
             </div>
           </div>
         </div>
         <div class="lang-group">
           <div class="lang-group-header" onclick="toggleLangGroup(this)">
-            <div><span class="lang-group-title">Setting Direction</span><span class="lang-group-count">5 phrases</span></div>
-            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280"><use href="#icon-chevron-down"/></svg>
+            <div><span class="lang-group-title">Setting Direction</span><span class="lang-group-count">5 phrases</span>
+            </div>
+            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280">
+              <use href="#icon-chevron-down" />
+            </svg>
           </div>
           <div class="lang-group-body">
             <div class="lang-phrase-list">
               <div class="lang-phrase">&#8220;Maybe we can start with your current situation.&#8221;</div>
-              <div class="lang-phrase">&#8220;Then I&#8217;ll ask a few questions to understand the priorities.&#8221;</div>
+              <div class="lang-phrase">&#8220;Then I&#8217;ll ask a few questions to understand the priorities.&#8221;
+              </div>
               <div class="lang-phrase">&#8220;After that, we can see what would make sense as a next step.&#8221;</div>
               <div class="lang-phrase">&#8220;Does that sound okay?&#8221;</div>
-              <div class="lang-phrase">&#8220;I&#8217;d like to understand the situation before we look at any options.&#8221;</div>
+              <div class="lang-phrase">&#8220;I&#8217;d like to understand the situation before we look at any
+                options.&#8221;</div>
             </div>
           </div>
         </div>
         <div class="lang-group">
           <div class="lang-group-header" onclick="toggleLangGroup(this)">
             <div><span class="lang-group-title">Discovering</span><span class="lang-group-count">5 phrases</span></div>
-            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280"><use href="#icon-chevron-down"/></svg>
+            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280">
+              <use href="#icon-chevron-down" />
+            </svg>
           </div>
           <div class="lang-group-body">
             <div class="lang-phrase-list">
@@ -3618,7 +3978,9 @@
         <div class="lang-group">
           <div class="lang-group-header" onclick="toggleLangGroup(this)">
             <div><span class="lang-group-title">Deepening</span><span class="lang-group-count">5 phrases</span></div>
-            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280"><use href="#icon-chevron-down"/></svg>
+            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280">
+              <use href="#icon-chevron-down" />
+            </svg>
           </div>
           <div class="lang-group-body">
             <div class="lang-phrase-list">
@@ -3633,7 +3995,9 @@
         <div class="lang-group">
           <div class="lang-group-header" onclick="toggleLangGroup(this)">
             <div><span class="lang-group-title">Summarising</span><span class="lang-group-count">5 phrases</span></div>
-            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280"><use href="#icon-chevron-down"/></svg>
+            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280">
+              <use href="#icon-chevron-down" />
+            </svg>
           </div>
           <div class="lang-group-body">
             <div class="lang-phrase-list">
@@ -3647,8 +4011,11 @@
         </div>
         <div class="lang-group">
           <div class="lang-group-header" onclick="toggleLangGroup(this)">
-            <div><span class="lang-group-title">Connecting Value</span><span class="lang-group-count">5 phrases</span></div>
-            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280"><use href="#icon-chevron-down"/></svg>
+            <div><span class="lang-group-title">Connecting Value</span><span class="lang-group-count">5 phrases</span>
+            </div>
+            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280">
+              <use href="#icon-chevron-down" />
+            </svg>
           </div>
           <div class="lang-group-body">
             <div class="lang-phrase-list">
@@ -3662,8 +4029,11 @@
         </div>
         <div class="lang-group">
           <div class="lang-group-header" onclick="toggleLangGroup(this)">
-            <div><span class="lang-group-title">Confirming Next Steps</span><span class="lang-group-count">5 phrases</span></div>
-            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280"><use href="#icon-chevron-down"/></svg>
+            <div><span class="lang-group-title">Confirming Next Steps</span><span class="lang-group-count">5
+                phrases</span></div>
+            <svg class="lang-chevron" width="16" height="16" style="color:#6B7280">
+              <use href="#icon-chevron-down" />
+            </svg>
           </div>
           <div class="lang-group-body">
             <div class="lang-phrase-list">
@@ -3694,7 +4064,10 @@
               <div class="prompt-title">Prompt 1 &#8212; Looking for a Better Solution</div>
               <div class="prompt-quote">&#8220;We&#8217;re looking for a better solution.&#8221;</div>
             </div>
-            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="prompt-body">
             <p class="prompt-hint">Choose one skill to practise, or use the full sequence.</p>
@@ -3716,7 +4089,10 @@
               <div class="prompt-title">Prompt 2 &#8212; Process Is Too Slow</div>
               <div class="prompt-quote">&#8220;Our current process is too slow.&#8221;</div>
             </div>
-            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="prompt-body">
             <div class="prompt-options">
@@ -3737,7 +4113,10 @@
               <div class="prompt-title">Prompt 3 &#8212; Need Better Visibility</div>
               <div class="prompt-quote">&#8220;We need better visibility.&#8221;</div>
             </div>
-            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="prompt-body">
             <div class="prompt-options">
@@ -3758,7 +4137,10 @@
               <div class="prompt-title">Prompt 4 &#8212; Too Much Manual Follow-Up</div>
               <div class="prompt-quote">&#8220;The team spends too much time manually following up.&#8221;</div>
             </div>
-            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="prompt-body">
             <div class="prompt-options">
@@ -3779,7 +4161,10 @@
               <div class="prompt-title">Prompt 5 &#8212; Comparing Options</div>
               <div class="prompt-quote">&#8220;We&#8217;re comparing a few options.&#8221;</div>
             </div>
-            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="prompt-body">
             <div class="prompt-options">
@@ -3800,7 +4185,10 @@
               <div class="prompt-title">Prompt 6 &#8212; Not Sure What We Need</div>
               <div class="prompt-quote">&#8220;We&#8217;re not sure exactly what we need yet.&#8221;</div>
             </div>
-            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="prompt-body">
             <div class="prompt-options">
@@ -3821,7 +4209,10 @@
               <div class="prompt-title">Prompt 7 &#8212; Just Want a Demo</div>
               <div class="prompt-quote">&#8220;We just want to see a demo.&#8221;</div>
             </div>
-            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="prompt-body">
             <div class="prompt-options">
@@ -3843,23 +4234,28 @@
     <div class="page" id="page-16">
       <div class="page-eyebrow amber">Practice Upgrade</div>
       <h1 class="page-title">Make It More Realistic</h1>
-      <p class="page-subtitle">Once the response is clear, try the same task with one extra difficulty. Add one challenge at a time.</p>
+      <p class="page-subtitle">Once the response is clear, try the same task with one extra difficulty. Add one
+        challenge at a time.</p>
       <div class="challenge-grid mt-8">
         <div class="challenge-card" onclick="this.classList.toggle('active')">
           <div class="challenge-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 6a5 5 0 0 1 10 0c0 2-1 3.5-2.5 4.5V12H5.5v-1.5C4 9.5 3 8 3 6z" stroke="#C8843A" stroke-width="1.3" fill="none"/>
-              <path d="M6 14h4" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round"/>
-              <line x1="8" y1="3" x2="8" y2="5" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M3 6a5 5 0 0 1 10 0c0 2-1 3.5-2.5 4.5V12H5.5v-1.5C4 9.5 3 8 3 6z" stroke="#C8843A"
+                stroke-width="1.3" fill="none" />
+              <path d="M6 14h4" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" />
+              <line x1="8" y1="3" x2="8" y2="5" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" />
             </svg>
           </div>
           <div class="challenge-title">Short Answers</div>
-          <div class="challenge-quote">Client gives one-word or brief answers. &#8220;Fine.&#8221; / &#8220;Not sure.&#8221; / &#8220;Maybe.&#8221;</div>
+          <div class="challenge-quote">Client gives one-word or brief answers. &#8220;Fine.&#8221; / &#8220;Not
+            sure.&#8221; / &#8220;Maybe.&#8221;</div>
         </div>
         <div class="challenge-card" onclick="this.classList.toggle('active')">
           <div class="challenge-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M6 8V4a1 1 0 0 1 2 0v4M6 8V6a1 1 0 0 0-2 0v3a5 5 0 0 0 5 5h1a4 4 0 0 0 4-4V8a1 1 0 0 0-2 0M6 8a1 1 0 0 1 2 0" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+              <path
+                d="M6 8V4a1 1 0 0 1 2 0v4M6 8V6a1 1 0 0 0-2 0v3a5 5 0 0 0 5 5h1a4 4 0 0 0 4-4V8a1 1 0 0 0-2 0M6 8a1 1 0 0 1 2 0"
+                stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" fill="none" />
             </svg>
           </div>
           <div class="challenge-title">Vague Problem</div>
@@ -3868,9 +4264,9 @@
         <div class="challenge-card" onclick="this.classList.toggle('active')">
           <div class="challenge-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <rect x="2" y="5" width="12" height="8" rx="1.5" stroke="#C8843A" stroke-width="1.3"/>
-              <path d="M5 5V4a3 3 0 0 1 6 0v1" stroke="#C8843A" stroke-width="1.3"/>
-              <circle cx="8" cy="9" r="1.5" stroke="#C8843A" stroke-width="1.3"/>
+              <rect x="2" y="5" width="12" height="8" rx="1.5" stroke="#C8843A" stroke-width="1.3" />
+              <path d="M5 5V4a3 3 0 0 1 6 0v1" stroke="#C8843A" stroke-width="1.3" />
+              <circle cx="8" cy="9" r="1.5" stroke="#C8843A" stroke-width="1.3" />
             </svg>
           </div>
           <div class="challenge-title">Jumps to Price</div>
@@ -3879,9 +4275,10 @@
         <div class="challenge-card" onclick="this.classList.toggle('active')">
           <div class="challenge-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="9" r="5.5" stroke="#C8843A" stroke-width="1.3"/>
-              <path d="M8 6v3l2 1.5" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5.5 2.5l-2 1.5M10.5 2.5l2 1.5" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="8" cy="9" r="5.5" stroke="#C8843A" stroke-width="1.3" />
+              <path d="M8 6v3l2 1.5" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M5.5 2.5l-2 1.5M10.5 2.5l2 1.5" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" />
             </svg>
           </div>
           <div class="challenge-title">Busy Client</div>
@@ -3890,9 +4287,10 @@
         <div class="challenge-card" onclick="this.classList.toggle('active')">
           <div class="challenge-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="8" r="5.5" stroke="#C8843A" stroke-width="1.3"/>
-              <path d="M6 6.5c0-1 .9-1.5 2-1.5s2 .7 2 1.5c0 1-1 1.5-2 2" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round"/>
-              <circle cx="8" cy="11" r="0.75" fill="#C8843A"/>
+              <circle cx="8" cy="8" r="5.5" stroke="#C8843A" stroke-width="1.3" />
+              <path d="M6 6.5c0-1 .9-1.5 2-1.5s2 .7 2 1.5c0 1-1 1.5-2 2" stroke="#C8843A" stroke-width="1.3"
+                stroke-linecap="round" />
+              <circle cx="8" cy="11" r="0.75" fill="#C8843A" />
             </svg>
           </div>
           <div class="challenge-title">Wants Demo Immediately</div>
@@ -3901,8 +4299,8 @@
         <div class="challenge-card" onclick="this.classList.toggle('active')">
           <div class="challenge-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <rect x="2.5" y="3.5" width="11" height="9" rx="1.5" stroke="#C8843A" stroke-width="1.3"/>
-              <path d="M5 7h6M5 9.5h4" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round"/>
+              <rect x="2.5" y="3.5" width="11" height="9" rx="1.5" stroke="#C8843A" stroke-width="1.3" />
+              <path d="M5 7h6M5 9.5h4" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" />
             </svg>
           </div>
           <div class="challenge-title">Just Researching</div>
@@ -3911,9 +4309,9 @@
         <div class="challenge-card" onclick="this.classList.toggle('active')">
           <div class="challenge-icon">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="6" cy="6" r="3" stroke="#C8843A" stroke-width="1.3"/>
-              <circle cx="11" cy="6" r="3" stroke="#C8843A" stroke-width="1.3"/>
-              <path d="M8 13c-2 0-5-1-5-3" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="6" cy="6" r="3" stroke="#C8843A" stroke-width="1.3" />
+              <circle cx="11" cy="6" r="3" stroke="#C8843A" stroke-width="1.3" />
+              <path d="M8 13c-2 0-5-1-5-3" stroke="#C8843A" stroke-width="1.3" stroke-linecap="round" />
             </svg>
           </div>
           <div class="challenge-title">Multiple Stakeholders</div>
@@ -3922,11 +4320,14 @@
       </div>
       <div class="card mt-20">
         <div class="section-label mb-8">How to use these</div>
-        <p style="font-size:14px;color:var(--navy);line-height:1.65;margin-bottom:12px">Choose one prompt from the Practice Prompt Library and one challenge from this page. Respond using either a single skill or the full sequence.</p>
+        <p style="font-size:14px;color:var(--navy);line-height:1.65;margin-bottom:12px">Choose one prompt from the
+          Practice Prompt Library and one challenge from this page. Respond using either a single skill or the full
+          sequence.</p>
         <div class="challenge-example">
           <p><strong>Prompt:</strong> &#8220;We&#8217;re looking for a better solution.&#8221;</p>
           <p><strong>Challenge:</strong> The client gives very short answers and does not elaborate.</p>
-          <p class="task">Task: Guide the conversation and deepen the answers without making the client feel pressured.</p>
+          <p class="task">Task: Guide the conversation and deepen the answers without making the client feel pressured.
+          </p>
         </div>
       </div>
     </div>
@@ -3935,55 +4336,64 @@
     <div class="page" id="page-17">
       <div class="page-eyebrow">Standard</div>
       <h1 class="page-title">What Good Looks Like</h1>
-      <p class="page-subtitle">A strong discovery call should feel guided, curious, and clear. There is no single perfect call &#8212; but strong discovery communication usually includes a few clear qualities.</p>
+      <p class="page-subtitle">A strong discovery call should feel guided, curious, and clear. There is no single
+        perfect call &#8212; but strong discovery communication usually includes a few clear qualities.</p>
       <div class="good-list mt-8">
         <div class="good-item">
           <div class="good-num">1</div>
           <div>
             <div class="good-title">Clear opening</div>
-            <div class="good-phrase">&#8220;To start, it would be useful to understand your current situation.&#8221; &#8212; The call starts with warmth and a simple sense of direction.</div>
+            <div class="good-phrase">&#8220;To start, it would be useful to understand your current situation.&#8221;
+              &#8212; The call starts with warmth and a simple sense of direction.</div>
           </div>
         </div>
         <div class="good-item">
           <div class="good-num">2</div>
           <div>
             <div class="good-title">Simple direction</div>
-            <div class="good-phrase">&#8220;Maybe we can start with your current situation, then see what makes sense from there.&#8221; &#8212; The student explains how the conversation will work before asking questions.</div>
+            <div class="good-phrase">&#8220;Maybe we can start with your current situation, then see what makes sense
+              from there.&#8221; &#8212; The student explains how the conversation will work before asking questions.
+            </div>
           </div>
         </div>
         <div class="good-item">
           <div class="good-num">3</div>
           <div>
             <div class="good-title">Useful questions</div>
-            <div class="good-phrase">&#8220;Can you tell me what you&#8217;re trying to improve and how you&#8217;re handling it currently?&#8221; &#8212; Questions are open and specific, not generic.</div>
+            <div class="good-phrase">&#8220;Can you tell me what you&#8217;re trying to improve and how you&#8217;re
+              handling it currently?&#8221; &#8212; Questions are open and specific, not generic.</div>
           </div>
         </div>
         <div class="good-item">
           <div class="good-num">4</div>
           <div>
             <div class="good-title">Deeper follow-up</div>
-            <div class="good-phrase">&#8220;When you say the process is slow, what does that usually look like in practice?&#8221; &#8212; When the client gives a vague answer, the student asks one more question.</div>
+            <div class="good-phrase">&#8220;When you say the process is slow, what does that usually look like in
+              practice?&#8221; &#8212; When the client gives a vague answer, the student asks one more question.</div>
           </div>
         </div>
         <div class="good-item">
           <div class="good-num">5</div>
           <div>
             <div class="good-title">Accurate summary</div>
-            <div class="good-phrase">&#8220;So if I understand correctly&#8230; Is that accurate?&#8221; &#8212; Before moving forward, the student reflects back what they heard and checks accuracy.</div>
+            <div class="good-phrase">&#8220;So if I understand correctly&#8230; Is that accurate?&#8221; &#8212; Before
+              moving forward, the student reflects back what they heard and checks accuracy.</div>
           </div>
         </div>
         <div class="good-item">
           <div class="good-num">6</div>
           <div>
             <div class="good-title">Value connection</div>
-            <div class="good-phrase">&#8220;Based on what you described, the relevant part is&#8230;&#8221; &#8212; Any value mentioned is connected to something the client actually said.</div>
+            <div class="good-phrase">&#8220;Based on what you described, the relevant part is&#8230;&#8221; &#8212; Any
+              value mentioned is connected to something the client actually said.</div>
           </div>
         </div>
         <div class="good-item">
           <div class="good-num">7</div>
           <div>
             <div class="good-title">Clear next step</div>
-            <div class="good-phrase">&#8220;Would it make sense to schedule a follow-up?&#8221; &#8212; The call ends with a specific, agreed next step rather than a vague ending.</div>
+            <div class="good-phrase">&#8220;Would it make sense to schedule a follow-up?&#8221; &#8212; The call ends
+              with a specific, agreed next step rather than a vague ending.</div>
           </div>
         </div>
         <div class="good-item">
@@ -3996,15 +4406,30 @@
       </div>
       <div class="card mt-20">
         <div class="section-label mb-8">Strong response checklist</div>
-        <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px">A strong discovery call usually includes at least five of these:</p>
+        <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px">A strong discovery call usually includes at
+          least five of these:</p>
         <div class="checklist">
-          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87"><use href="#icon-check-sm"/></svg>opened with warmth and purpose</div>
-          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87"><use href="#icon-check-sm"/></svg>gave the conversation a simple direction</div>
-          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87"><use href="#icon-check-sm"/></svg>asked at least one useful discovery question</div>
-          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87"><use href="#icon-check-sm"/></svg>followed up when the answer was vague</div>
-          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87"><use href="#icon-check-sm"/></svg>summarised before recommending</div>
-          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87"><use href="#icon-check-sm"/></svg>connected value to the client&#8217;s situation</div>
-          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87"><use href="#icon-check-sm"/></svg>confirmed a clear next step</div>
+          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87">
+              <use href="#icon-check-sm" />
+            </svg>opened with warmth and purpose</div>
+          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87">
+              <use href="#icon-check-sm" />
+            </svg>gave the conversation a simple direction</div>
+          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87">
+              <use href="#icon-check-sm" />
+            </svg>asked at least one useful discovery question</div>
+          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87">
+              <use href="#icon-check-sm" />
+            </svg>followed up when the answer was vague</div>
+          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87">
+              <use href="#icon-check-sm" />
+            </svg>summarised before recommending</div>
+          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87">
+              <use href="#icon-check-sm" />
+            </svg>connected value to the client&#8217;s situation</div>
+          <div class="checklist-item"><svg width="12" height="12" style="color:#2D8F87">
+              <use href="#icon-check-sm" />
+            </svg>confirmed a clear next step</div>
         </div>
       </div>
       <div class="mini-example mt-16">
@@ -4012,11 +4437,18 @@
         <div class="client-label">Client</div>
         <div class="client-quote">&#8220;We&#8217;re struggling with how we manage updates across the team.&#8221;</div>
         <div class="client-label mt-10">Response</div>
-        <div class="response-text">&#8220;Thanks for sharing that. Before we look at anything specific, it would be useful to understand how your team manages updates today. When you say you&#8217;re struggling, what usually creates the most difficulty &#8212; is it more about the speed of updates, or the visibility across the team? So if I understand correctly, the main issue is that people are working from different versions of information, and that creates delays and confusion. Based on that, the relevant value would be improving how updates are shared so the team always knows the current status. Would it make sense to schedule a short follow-up where we look at what that could look like?&#8221;</div>
+        <div class="response-text">&#8220;Thanks for sharing that. Before we look at anything specific, it would be
+          useful to understand how your team manages updates today. When you say you&#8217;re struggling, what usually
+          creates the most difficulty &#8212; is it more about the speed of updates, or the visibility across the team?
+          So if I understand correctly, the main issue is that people are working from different versions of
+          information, and that creates delays and confusion. Based on that, the relevant value would be improving how
+          updates are shared so the team always knows the current status. Would it make sense to schedule a short
+          follow-up where we look at what that could look like?&#8221;</div>
       </div>
       <div class="optional-q mt-16">
         <div class="optional-q-label">Optional &#8212; quick question</div>
-        <div class="optional-q-text">Which part of this response sounds strongest: the question, the summary, or the value connection?</div>
+        <div class="optional-q-text">Which part of this response sounds strongest: the question, the summary, or the
+          value connection?</div>
       </div>
     </div>
 
@@ -4025,7 +4457,8 @@
       <div class="completion-hero">
         <div class="completion-badge">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-            <path d="M8 18l6 6 14-14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 18l6 6 14-14" stroke="white" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </div>
         <h1 class="completion-title">Discovery Call Foundations<br>Complete</h1>
@@ -4037,25 +4470,39 @@
           <div class="section-label mb-8">What you can do now</div>
           <div class="can-do-list">
             <div class="can-do-item">
-              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87"><use href="#icon-check-lg"/></svg></div>Open a discovery call professionally
+              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87">
+                  <use href="#icon-check-lg" />
+                </svg></div>Open a discovery call professionally
             </div>
             <div class="can-do-item">
-              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87"><use href="#icon-check-lg"/></svg></div>Set a simple direction for the conversation
+              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87">
+                  <use href="#icon-check-lg" />
+                </svg></div>Set a simple direction for the conversation
             </div>
             <div class="can-do-item">
-              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87"><use href="#icon-check-lg"/></svg></div>Ask useful discovery questions
+              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87">
+                  <use href="#icon-check-lg" />
+                </svg></div>Ask useful discovery questions
             </div>
             <div class="can-do-item">
-              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87"><use href="#icon-check-lg"/></svg></div>Deepen vague answers
+              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87">
+                  <use href="#icon-check-lg" />
+                </svg></div>Deepen vague answers
             </div>
             <div class="can-do-item">
-              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87"><use href="#icon-check-lg"/></svg></div>Summarise what you heard
+              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87">
+                  <use href="#icon-check-lg" />
+                </svg></div>Summarise what you heard
             </div>
             <div class="can-do-item">
-              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87"><use href="#icon-check-lg"/></svg></div>Connect value to the client&#8217;s situation
+              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87">
+                  <use href="#icon-check-lg" />
+                </svg></div>Connect value to the client&#8217;s situation
             </div>
             <div class="can-do-item">
-              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87"><use href="#icon-check-lg"/></svg></div>Confirm a useful next step
+              <div class="can-do-check"><svg width="11" height="11" style="color:#2D8F87">
+                  <use href="#icon-check-lg" />
+                </svg></div>Confirm a useful next step
             </div>
           </div>
         </div>
@@ -4107,63 +4554,76 @@
           <div class="section-label">Suggested next modules</div>
         </div>
         <div class="next-modules">
-          <a class="next-module-card" href="https://vagabondigital.github.io/explaining-value-clearly-module/" target="_blank" rel="noopener">
+          <a class="next-module-card" href="https://vagabondigital.github.io/explaining-value-clearly-module/"
+            target="_blank" rel="noopener">
             <div class="next-module-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 3L20 9L12 21L4 9L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M4 9H20" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M9 9L12 21L15 9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M12 3L20 9L12 21L4 9L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M4 9H20" stroke="currentColor" stroke-width="1.6" />
+                <path d="M9 9L12 21L15 9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
               </svg>
             </div>
             <div class="next-module-content">
               <div class="next-module-kicker">Next Path</div>
               <div class="next-module-title">Explaining Value Clearly</div>
-              <div class="next-module-desc"><strong>Best for:</strong> connecting what you heard in discovery to a clear, compelling value statement.</div>
+              <div class="next-module-desc"><strong>Best for:</strong> connecting what you heard in discovery to a
+                clear, compelling value statement.</div>
             </div>
             <div class="next-module-arrow">&#8594;</div>
           </a>
-          <a class="next-module-card" href="https://vagabondigital.github.io/objection-handling-module/" target="_blank" rel="noopener">
+          <a class="next-module-card" href="https://vagabondigital.github.io/objection-handling-module/" target="_blank"
+            rel="noopener">
             <div class="next-module-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2L4 6V13C4 18 7.5 21.5 12 23C16.5 21.5 20 18 20 13V6L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M9 13l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2L4 6V13C4 18 7.5 21.5 12 23C16.5 21.5 20 18 20 13V6L12 2Z" stroke="currentColor"
+                  stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M9 13l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </div>
             <div class="next-module-content">
               <div class="next-module-kicker">Next Path</div>
               <div class="next-module-title">Objection Handling</div>
-              <div class="next-module-desc"><strong>Best for:</strong> clients who push back during or after the discovery call.</div>
+              <div class="next-module-desc"><strong>Best for:</strong> clients who push back during or after the
+                discovery call.</div>
             </div>
             <div class="next-module-arrow">&#8594;</div>
           </a>
-          <a class="next-module-card" href="https://vagabondigital.github.io/follow-up-and-next-steps-module/" target="_blank" rel="noopener">
+          <a class="next-module-card" href="https://vagabondigital.github.io/follow-up-and-next-steps-module/"
+            target="_blank" rel="noopener">
             <div class="next-module-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M5 6.5H19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M5 12H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M5 17.5H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M17 15L20 18L17 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 6.5H19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M5 12H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M5 17.5H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M17 15L20 18L17 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </div>
             <div class="next-module-content">
               <div class="next-module-kicker">Next Path</div>
               <div class="next-module-title">Follow-Up and Next Steps</div>
-              <div class="next-module-desc"><strong>Best for:</strong> momentum that disappears after the call ends.</div>
+              <div class="next-module-desc"><strong>Best for:</strong> momentum that disappears after the call ends.
+              </div>
             </div>
             <div class="next-module-arrow">&#8594;</div>
           </a>
-          <a class="next-module-card" href="https://vagabondigital.github.io/client-call-confidence-module/" target="_blank" rel="noopener">
+          <a class="next-module-card" href="https://vagabondigital.github.io/client-call-confidence-module/"
+            target="_blank" rel="noopener">
             <div class="next-module-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M8 12C8 9.8 9.8 8 12 8C14.2 8 16 9.8 16 12C16 14.2 14.2 16 12 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" opacity="0.5"/>
-                <path d="M12 4V2M12 22v-2M4 12H2M22 12h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+                <path d="M8 12C8 9.8 9.8 8 12 8C14.2 8 16 9.8 16 12C16 14.2 14.2 16 12 16" stroke="currentColor"
+                  stroke-width="1.6" stroke-linecap="round" />
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" opacity="0.5" />
+                <path d="M12 4V2M12 22v-2M4 12H2M22 12h-2" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" opacity="0.5" />
               </svg>
             </div>
             <div class="next-module-content">
               <div class="next-module-kicker">Next Path</div>
               <div class="next-module-title">Client Call Confidence</div>
-              <div class="next-module-desc"><strong>Best for:</strong> nerves, hesitation, or losing control of the conversation.</div>
+              <div class="next-module-desc"><strong>Best for:</strong> nerves, hesitation, or losing control of the
+                conversation.</div>
             </div>
             <div class="next-module-arrow">&#8594;</div>
           </a>
@@ -4171,10 +4631,14 @@
       </div>
 
       <div class="completion-actions">
-        <button class="btn-teal" onclick="goToPage(19)">Bonus Round <svg width="15" height="15" style="color:white"><use href="#icon-arrow-right-bonus"/></svg></button>
+        <button class="btn-teal" onclick="goToPage(19)">Bonus Round <svg width="15" height="15" style="color:white">
+            <use href="#icon-arrow-right-bonus" />
+          </svg></button>
         <div style="font-size:12.5px;color:var(--muted)">Optional &#8212; one more round if useful</div>
         <button class="btn-back" style="border-color:var(--border)" onclick="jumpToQuickReference()">
-          <svg width="13" height="13"><use href="#icon-doc-plus"/></svg>
+          <svg width="13" height="13">
+            <use href="#icon-doc-plus" />
+          </svg>
           Quick Reference
         </button>
       </div>
@@ -4184,12 +4648,14 @@
     <div class="page" id="page-19">
       <div class="page-eyebrow">Optional</div>
       <h1 class="page-title">Bonus Round</h1>
-      <p class="page-subtitle">One extra practice round. Choose an option and practise the skill one more time. No new theory &#8212; just one more useful round.</p>
+      <p class="page-subtitle">One extra practice round. Choose an option and practise the skill one more time. No new
+        theory &#8212; just one more useful round.</p>
       <div class="bonus-cards mt-8">
         <div class="bonus-card">
           <div class="bonus-num">Option 1</div>
           <div class="bonus-title">Short Call Challenge</div>
-          <div class="bonus-desc">Run a complete discovery call in under 5 minutes. Use the full framework but keep each move brief.</div>
+          <div class="bonus-desc">Run a complete discovery call in under 5 minutes. Use the full framework but keep each
+            move brief.</div>
           <div class="bonus-options">
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">team updates</div>
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">manual reporting</div>
@@ -4202,7 +4668,8 @@
         <div class="bonus-card">
           <div class="bonus-num">Option 2</div>
           <div class="bonus-title">Questions Only</div>
-          <div class="bonus-desc">Practise the discover and deepen steps only. Do not summarise or connect value yet. Focus entirely on question quality.</div>
+          <div class="bonus-desc">Practise the discover and deepen steps only. Do not summarise or connect value yet.
+            Focus entirely on question quality.</div>
           <div class="bonus-options">
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">current situation</div>
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">challenges</div>
@@ -4216,7 +4683,8 @@
         <div class="bonus-card">
           <div class="bonus-num">Option 3</div>
           <div class="bonus-title">Summary Challenge</div>
-          <div class="bonus-desc">Summarise the client&#8217;s situation in 20 seconds or less. Keep it accurate and clear.</div>
+          <div class="bonus-desc">Summarise the client&#8217;s situation in 20 seconds or less. Keep it accurate and
+            clear.</div>
           <div class="bonus-options">
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">manual follow-up issues</div>
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">visibility problems</div>
@@ -4229,7 +4697,8 @@
         <div class="bonus-card">
           <div class="bonus-num">Option 4</div>
           <div class="bonus-title">No Pitch Challenge</div>
-          <div class="bonus-desc">Guide the full call without explaining your solution or connecting value. Focus entirely on understanding the client&#8217;s situation.</div>
+          <div class="bonus-desc">Guide the full call without explaining your solution or connecting value. Focus
+            entirely on understanding the client&#8217;s situation.</div>
           <div class="bonus-options">
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">curious client</div>
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">impatient client</div>
@@ -4244,9 +4713,12 @@
           <div class="bonus-desc">End the call with a clear, specific next step. The client is hesitant.</div>
           <div class="bonus-options">
             <div class="bonus-opt" onclick="this.classList.toggle('selected')">&#8220;let me think about it&#8221;</div>
-            <div class="bonus-opt" onclick="this.classList.toggle('selected')">&#8220;I&#8217;ll speak to my manager&#8221;</div>
-            <div class="bonus-opt" onclick="this.classList.toggle('selected')">&#8220;just send me something&#8221;</div>
-            <div class="bonus-opt" onclick="this.classList.toggle('selected')">&#8220;we&#8217;re not ready yet&#8221;</div>
+            <div class="bonus-opt" onclick="this.classList.toggle('selected')">&#8220;I&#8217;ll speak to my
+              manager&#8221;</div>
+            <div class="bonus-opt" onclick="this.classList.toggle('selected')">&#8220;just send me something&#8221;
+            </div>
+            <div class="bonus-opt" onclick="this.classList.toggle('selected')">&#8220;we&#8217;re not ready yet&#8221;
+            </div>
           </div>
           <div class="bonus-for mt">Best for: next-step language, confidence, momentum</div>
         </div>
@@ -4309,7 +4781,8 @@
           <div class="good-num">2</div>
           <div>
             <div class="good-title">Set Direction</div>
-            <div class="good-phrase">&#8220;Maybe we can start with your current situation, then see what would make sense from there.&#8221;</div>
+            <div class="good-phrase">&#8220;Maybe we can start with your current situation, then see what would make
+              sense from there.&#8221;</div>
           </div>
         </div>
         <div class="good-item">
@@ -4356,20 +4829,27 @@
         <div class="client-label">Client</div>
         <div class="client-quote">&#8220;We&#8217;re looking for a better way to manage team updates.&#8221;</div>
         <div class="client-label mt-10">Response</div>
-        <div class="response-text">&#8220;Thanks for sharing that. Maybe we can start with how your team manages updates today, then we can see what would make sense from there. When you say you need a better way, what usually creates the most difficulty? So if I understand correctly, the main issue is that people spend too much time chasing updates manually, and that slows decisions down. Based on that, the relevant value would be reducing manual follow-up and improving visibility. Would it make sense to schedule a short follow-up where we look at what that could look like?&#8221;</div>
+        <div class="response-text">&#8220;Thanks for sharing that. Maybe we can start with how your team manages updates
+          today, then we can see what would make sense from there. When you say you need a better way, what usually
+          creates the most difficulty? So if I understand correctly, the main issue is that people spend too much time
+          chasing updates manually, and that slows decisions down. Based on that, the relevant value would be reducing
+          manual follow-up and improving visibility. Would it make sense to schedule a short follow-up where we look at
+          what that could look like?&#8221;</div>
       </div>
 
       <!-- Section 4: Use This When -->
       <div class="optional-q" style="margin-top:20px">
         <div class="optional-q-label">Use this when</div>
-        <div class="optional-q-text">Use this page before a discovery call, practice round, or follow-up conversation when you need a quick reminder.</div>
+        <div class="optional-q-text">Use this page before a discovery call, practice round, or follow-up conversation
+          when you need a quick reminder.</div>
       </div>
 
       <!-- Print button -->
       <div style="margin-top:24px;text-align:center">
         <button id="qr-print-btn" class="btn-teal" onclick="window.print()">
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-            <path d="M4 5V2h7v3M4 10H2V6h11v4h-2M4 10v3h7v-3" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M4 5V2h7v3M4 10H2V6h11v4h-2M4 10v3h7v-3" stroke="white" stroke-width="1.4" stroke-linecap="round"
+              stroke-linejoin="round" fill="none" />
           </svg>
           Print / Save as PDF
         </button>
@@ -4386,38 +4866,58 @@
     <div class="jump-panel-inner">
       <div class="jump-section-label">Start</div>
       <div class="jump-links">
-        <button class="jump-link" onclick="jumpTo(1)"><span class="jump-link-title">Landing</span><span class="jump-link-desc">Begin the module</span></button>
-        <button class="jump-link" onclick="jumpTo(2)"><span class="jump-link-title">Overview</span><span class="jump-link-desc">What this module builds</span></button>
+        <button class="jump-link" onclick="jumpTo(1)"><span class="jump-link-title">Landing</span><span
+            class="jump-link-desc">Begin the module</span></button>
+        <button class="jump-link" onclick="jumpTo(2)"><span class="jump-link-title">Overview</span><span
+            class="jump-link-desc">What this module builds</span></button>
       </div>
       <div class="jump-section-label">Framework</div>
       <div class="jump-links">
-        <button class="jump-link" onclick="jumpTo(3)"><span class="jump-link-title">Skill Path</span><span class="jump-link-desc">See the skill progression</span></button>
-        <button class="jump-link" onclick="jumpTo(4)"><span class="jump-link-title">Core Framework</span><span class="jump-link-desc">Learn the discovery structure</span></button>
-        <button class="jump-link" onclick="jumpTo(5)"><span class="jump-link-title">Discovery Areas</span><span class="jump-link-desc">Explore common conversation areas</span></button>
+        <button class="jump-link" onclick="jumpTo(3)"><span class="jump-link-title">Skill Path</span><span
+            class="jump-link-desc">See the skill progression</span></button>
+        <button class="jump-link" onclick="jumpTo(4)"><span class="jump-link-title">Core Framework</span><span
+            class="jump-link-desc">Learn the discovery structure</span></button>
+        <button class="jump-link" onclick="jumpTo(5)"><span class="jump-link-title">Discovery Areas</span><span
+            class="jump-link-desc">Explore common conversation areas</span></button>
       </div>
       <div class="jump-section-label">Skills</div>
       <div class="jump-links">
-        <button class="jump-link" onclick="jumpTo(6)"><span class="jump-link-title">Skill 1 &#8212; Open the Call Clearly</span><span class="jump-link-desc">Start with warmth and direction.</span></button>
-        <button class="jump-link" onclick="jumpTo(7)"><span class="jump-link-title">Skill 2 &#8212; Set Direction</span><span class="jump-link-desc">Give the call a clear path.</span></button>
-        <button class="jump-link" onclick="jumpTo(8)"><span class="jump-link-title">Skill 3 &#8212; Ask Discovery Questions</span><span class="jump-link-desc">Reveal situation, goals, and challenges.</span></button>
-        <button class="jump-link" onclick="jumpTo(9)"><span class="jump-link-title">Skill 4 &#8212; Deepen Vague Answers</span><span class="jump-link-desc">Turn general answers into useful detail.</span></button>
-        <button class="jump-link" onclick="jumpTo(10)"><span class="jump-link-title">Skill 5 &#8212; Summarise What You Heard</span><span class="jump-link-desc">Reflect back before moving forward.</span></button>
-        <button class="jump-link" onclick="jumpTo(11)"><span class="jump-link-title">Skill 6 &#8212; Connect Value Carefully</span><span class="jump-link-desc">Link value to what the client said.</span></button>
-        <button class="jump-link" onclick="jumpTo(12)"><span class="jump-link-title">Skill 7 &#8212; Confirm the Next Step</span><span class="jump-link-desc">End with a clear next step.</span></button>
+        <button class="jump-link" onclick="jumpTo(6)"><span class="jump-link-title">Skill 1 &#8212; Open the Call
+            Clearly</span><span class="jump-link-desc">Start with warmth and direction.</span></button>
+        <button class="jump-link" onclick="jumpTo(7)"><span class="jump-link-title">Skill 2 &#8212; Set
+            Direction</span><span class="jump-link-desc">Give the call a clear path.</span></button>
+        <button class="jump-link" onclick="jumpTo(8)"><span class="jump-link-title">Skill 3 &#8212; Ask Discovery
+            Questions</span><span class="jump-link-desc">Reveal situation, goals, and challenges.</span></button>
+        <button class="jump-link" onclick="jumpTo(9)"><span class="jump-link-title">Skill 4 &#8212; Deepen Vague
+            Answers</span><span class="jump-link-desc">Turn general answers into useful detail.</span></button>
+        <button class="jump-link" onclick="jumpTo(10)"><span class="jump-link-title">Skill 5 &#8212; Summarise What You
+            Heard</span><span class="jump-link-desc">Reflect back before moving forward.</span></button>
+        <button class="jump-link" onclick="jumpTo(11)"><span class="jump-link-title">Skill 6 &#8212; Connect Value
+            Carefully</span><span class="jump-link-desc">Link value to what the client said.</span></button>
+        <button class="jump-link" onclick="jumpTo(12)"><span class="jump-link-title">Skill 7 &#8212; Confirm the Next
+            Step</span><span class="jump-link-desc">End with a clear next step.</span></button>
       </div>
       <div class="jump-section-label">Practice &amp; Reference</div>
       <div class="jump-links">
-        <button class="jump-link" onclick="jumpTo(13)"><span class="jump-link-title">Put It Together</span><span class="jump-link-desc">Combine the full sequence</span></button>
-        <button class="jump-link" onclick="jumpTo(14)"><span class="jump-link-title">Language Bank</span><span class="jump-link-desc">Find useful phrases</span></button>
-        <button class="jump-link" onclick="jumpTo(15)"><span class="jump-link-title">Practice Prompts</span><span class="jump-link-desc">Choose focused practice</span></button>
-        <button class="jump-link" onclick="jumpTo(16)"><span class="jump-link-title">Make It More Realistic</span><span class="jump-link-desc">Add one realistic challenge</span></button>
-        <button class="jump-link" onclick="jumpTo(17)"><span class="jump-link-title">What Good Looks Like</span><span class="jump-link-desc">Review strong performance</span></button>
+        <button class="jump-link" onclick="jumpTo(13)"><span class="jump-link-title">Put It Together</span><span
+            class="jump-link-desc">Combine the full sequence</span></button>
+        <button class="jump-link" onclick="jumpTo(14)"><span class="jump-link-title">Language Bank</span><span
+            class="jump-link-desc">Find useful phrases</span></button>
+        <button class="jump-link" onclick="jumpTo(15)"><span class="jump-link-title">Practice Prompts</span><span
+            class="jump-link-desc">Choose focused practice</span></button>
+        <button class="jump-link" onclick="jumpTo(16)"><span class="jump-link-title">Make It More Realistic</span><span
+            class="jump-link-desc">Add one realistic challenge</span></button>
+        <button class="jump-link" onclick="jumpTo(17)"><span class="jump-link-title">What Good Looks Like</span><span
+            class="jump-link-desc">Review strong performance</span></button>
       </div>
       <div class="jump-section-label">Finish</div>
       <div class="jump-links">
-        <button class="jump-link" onclick="jumpTo(18)"><span class="jump-link-title">Discovery Call Complete</span><span class="jump-link-desc">Review what the student can now do</span></button>
-        <button class="jump-link" onclick="jumpTo(19)"><span class="jump-link-title">Bonus Round</span><span class="jump-link-desc">Optional extra practice</span></button>
-        <button class="jump-link" id="qr-jump-link" onclick="jumpToQuickReference()"><span class="jump-link-title">Quick Reference</span><span class="jump-link-desc">Compact student takeaway</span></button>
+        <button class="jump-link" onclick="jumpTo(18)"><span class="jump-link-title">Discovery Call Complete</span><span
+            class="jump-link-desc">Review what the student can now do</span></button>
+        <button class="jump-link" onclick="jumpTo(19)"><span class="jump-link-title">Bonus Round</span><span
+            class="jump-link-desc">Optional extra practice</span></button>
+        <button class="jump-link" id="qr-jump-link" onclick="jumpToQuickReference()"><span class="jump-link-title">Quick
+            Reference</span><span class="jump-link-desc">Compact student takeaway</span></button>
       </div>
     </div>
   </div>
@@ -4427,11 +4927,15 @@
     <div class="bottom-left">
       <button class="btn-back" id="btnBack" onclick="handleBack()">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <path d="M9 3L5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 3L5 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
         Back
       </button>
-      <span class="page-indicator" id="pageIndicator">1 / 19</span>
+      <span class="page-indicator" id="pageIndicator">
+        <span class="page-count-desktop">Page 1 of 19</span>
+        <span class="page-count-mobile">1/19</span>
+      </span>
     </div>
     <div class="bottom-right">
       <button class="btn-jump" id="btnJump" onclick="toggleJump()">
@@ -4453,15 +4957,15 @@
     const TOTAL = 19;
 
     const PAGE_TITLES = {
-      1:  'Landing',
-      2:  'Overview',
-      3:  'Skill Path',
-      4:  'Core Framework',
-      5:  'Discovery Areas',
-      6:  'Open the Call Clearly',
-      7:  'Set Direction',
-      8:  'Ask Discovery Questions',
-      9:  'Deepen Vague Answers',
+      1: 'Landing',
+      2: 'Overview',
+      3: 'Skill Path',
+      4: 'Core Framework',
+      5: 'Discovery Areas',
+      6: 'Open the Call Clearly',
+      7: 'Set Direction',
+      8: 'Ask Discovery Questions',
+      9: 'Deepen Vague Answers',
       10: 'Summarise What You Heard',
       11: 'Connect Value Carefully',
       12: 'Confirm the Next Step',
@@ -4500,8 +5004,8 @@
     function updateBar(p) {
       const back = document.getElementById('btnBack');
       const cont = document.getElementById('btnContinue');
-      const ind  = document.getElementById('pageIndicator');
-      const bar  = document.getElementById('bottomBar');
+      const ind = document.getElementById('pageIndicator');
+      const bar = document.getElementById('bottomBar');
 
       if (p === 1 && !quickRefActive) {
         bar.classList.add('hidden');
@@ -4510,10 +5014,16 @@
         back.disabled = false;
       }
 
+      // Page indicator text
       if (quickRefActive) {
-        ind.textContent = 'Quick Reference';
+        ind.innerHTML =
+          '<span class="page-count-desktop">Quick Reference</span>' +
+          '<span class="page-count-mobile">Quick Ref</span>';
       } else {
-        ind.textContent = p + ' / ' + TOTAL;
+        ind.innerHTML =
+          '<span class="page-count-desktop">Page ' + p + ' of ' + TOTAL + '</span>' +
+          '<span class="page-count-mobile">' + p + '/' + TOTAL + '</span>' +
+          '<span class="page-title-desktop"> · ' + PAGE_TITLES[p] + '</span>';
       }
 
       if (quickRefActive || p === TOTAL) {
@@ -4630,7 +5140,7 @@
 
     function togglePrompt(header) {
       const item = header.closest('.prompt-item');
-      const was  = item.classList.contains('open');
+      const was = item.classList.contains('open');
       document.querySelectorAll('.prompt-item').forEach(i => i.classList.remove('open'));
       if (!was) item.classList.add('open');
     }
