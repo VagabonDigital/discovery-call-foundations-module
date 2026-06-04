@@ -2458,6 +2458,115 @@
 
     }
 
+    /* ── STUDY TOOLS ────────────────────────────────────────── */
+    .study-tools {
+      margin-top: 28px
+    }
+
+    .study-tools-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 12px
+    }
+
+    .study-tools-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px
+    }
+
+    @media (max-width: 600px) {
+      .study-tools-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .study-tool-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .study-tool-header {
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .study-tool-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--teal-pale);
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0
+    }
+
+    .study-tool-kicker {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 3px
+    }
+
+    .study-tool-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.25
+    }
+
+    .study-tool-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.55
+    }
+
+    .study-tool-audio {
+      width: 100%;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      accent-color: var(--teal)
+    }
+
+    .study-tool-audio::-webkit-media-controls-panel {
+      background: var(--teal-pale)
+    }
+
+    .study-tool-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--teal-pale);
+      border: 1px solid rgba(45, 143, 135, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--teal);
+      text-decoration: none;
+      transition: var(--transition);
+      align-self: flex-start
+    }
+
+    .study-tool-link:hover {
+      background: var(--teal);
+      color: white
+    }
+
     /* ── PRINT / SAVE AS PDF (Quick Reference only) ────────── */
     @media print {
 
@@ -2582,6 +2691,23 @@
     <symbol id="icon-doc-plus" viewBox="0 0 13 13">
       <rect x="1.5" y="1.5" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.3" />
       <path d="M4 6.5h5M6.5 4v5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-podcast" viewBox="0 0 20 20">
+      <path d="M5 10a5 5 0 0 1 10 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+      <path d="M5 10v3a2 2 0 0 0 2 2h1v-5H6a1 1 0 0 0-1 1Z" fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linejoin="round" />
+      <path d="M15 10v3a2 2 0 0 1-2 2h-1v-5h2a1 1 0 0 1 1 1Z" fill="none" stroke="currentColor" stroke-width="1.6"
+        stroke-linejoin="round" />
+      <path d="M8 17h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-mindmap" viewBox="0 0 20 20">
+      <circle cx="10" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <circle cx="4.5" cy="5" r="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <circle cx="15.5" cy="5" r="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <circle cx="4.5" cy="15" r="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <circle cx="15.5" cy="15" r="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+      <path d="M8.3 8.4L6 6.6M11.7 8.4L14 6.6M8.3 11.6L6 13.4M11.7 11.6L14 13.4" fill="none" stroke="currentColor"
+        stroke-width="1.4" stroke-linecap="round" />
     </symbol>
   </svg>
 
@@ -2732,6 +2858,55 @@
                 </svg></div>Clearer next-step language
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="study-tools">
+        <div class="study-tools-label">Study Tools</div>
+        <div class="study-tools-grid">
+          <div class="study-tool-card">
+            <div class="study-tool-header">
+              <div class="study-tool-icon">
+                <svg width="20" height="20">
+                  <use href="#icon-podcast" />
+                </svg>
+              </div>
+              <div>
+                <div class="study-tool-kicker">Podcast · Deep Dive</div>
+                <div class="study-tool-title">How to Lead Discovery Calls in English</div>
+              </div>
+            </div>
+            <div class="study-tool-desc">A hosted audio walkthrough of the seven-step framework using the team updates
+              scenario as a running example. Good before or after a session.</div>
+            <audio class="study-tool-audio" controls preload="metadata">
+              <source src="discovery-call-foundations-audio-overview.m4a" type="audio/mp4">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="study-tool-card">
+            <div class="study-tool-header">
+              <div class="study-tool-icon">
+                <svg width="20" height="20">
+                  <use href="#icon-mindmap" />
+                </svg>
+              </div>
+              <div>
+                <div class="study-tool-kicker">Mind Map · Framework Overview</div>
+                <div class="study-tool-title">Discovery Call Foundations Framework at a Glance</div>
+              </div>
+            </div>
+            <div class="study-tool-desc">An interactive visual map of the seven steps, key phrases, common discovery
+              areas, and practice challenges. Open it, explore it, save it.</div>
+            <a class="study-tool-link"
+              href="https://notebooklm.google.com/notebook/e20304bd-f339-4cb3-a10e-674b7f6c9ed0/artifact/7348bffc-037c-485c-a66c-b1300a639930?utm_source=nlm_web_share&utm_medium=google_oo&utm_campaign=art_share_1&utm_content=&utm_smc=nlm_web_share_google_oo_art_share_1_"
+              target="_blank" rel="noopener">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                <path
+                  d="M5 2H2.5A1.5 1.5 0 0 0 1 3.5v7A1.5 1.5 0 0 0 2.5 12h7A1.5 1.5 0 0 0 11 10.5V8M8 1h4m0 0v4m0-4L5.5 7.5"
+                  stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Open Mind Map
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -2885,9 +3060,15 @@
       <div class="mini-example mt-16">
         <div class="mini-example-label">Mini Example &#8212; Full Sequence</div>
         <div class="client-label">Client</div>
-        <div class="client-quote">&#8220;We&#8217;re comparing a few options, but we&#8217;re not sure what we actually need yet.&#8221;</div>
+        <div class="client-quote">&#8220;We&#8217;re comparing a few options, but we&#8217;re not sure what we actually
+          need yet.&#8221;</div>
         <div class="client-label mt-10">Response</div>
-        <div class="response-text">&#8220;Thanks for sharing that. It would be useful to understand what you&#8217;re trying to improve first, then we can see what would make sense. When you say you&#8217;re not sure what you need, what is making the decision unclear right now? So if I understand correctly, the main issue is not choosing an option immediately, but getting clearer on your priorities and decision criteria. Based on that, the relevant next step would be to understand what matters most before comparing solutions. Would it make sense to look at those priorities together?&#8221;</div>
+        <div class="response-text">&#8220;Thanks for sharing that. It would be useful to understand what you&#8217;re
+          trying to improve first, then we can see what would make sense. When you say you&#8217;re not sure what you
+          need, what is making the decision unclear right now? So if I understand correctly, the main issue is not
+          choosing an option immediately, but getting clearer on your priorities and decision criteria. Based on that,
+          the relevant next step would be to understand what matters most before comparing solutions. Would it make
+          sense to look at those priorities together?&#8221;</div>
       </div>
       <div class="optional-q mt-16">
         <div class="optional-q-label">Optional &#8212; quick question</div>
@@ -3832,11 +4013,16 @@
         <p style="font-size:13.5px;color:var(--muted);margin-bottom:14px">Choose a client situation and practise the
           full sequence: Open → Set Direction → Discover → Deepen → Summarise → Connect → Confirm.</p>
         <div class="practice-options">
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re comparing a few options.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re not sure exactly what we need yet.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We want to understand what would work best for our team.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re having trouble deciding what to prioritise.&#8221;</div>
-          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We just want to see a demo.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re comparing a few
+            options.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re not sure exactly what
+            we need yet.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We want to understand what would
+            work best for our team.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We&#8217;re having trouble
+            deciding what to prioritise.&#8221;</div>
+          <div class="practice-opt" onclick="this.classList.toggle('selected')">&#8220;We just want to see a
+            demo.&#8221;</div>
         </div>
       </div>
 
@@ -3857,7 +4043,12 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;We need something better.&#8221;</div>
           <div class="client-label mt-10">Full sequence response</div>
-          <div class="response-text">&#8220;Thanks for that. Maybe we can start with what you&#8217;re comparing at the moment, then see what would make sense from there. When you say you need something better, what is not working with the current options? I want to make sure I understand before suggesting anything. So if I understand correctly, the main issue is that the options look similar, but it is not clear which one fits your priorities best. Based on that, the useful next step would be to define the main criteria before looking at solutions. Would it make sense to do that together?&#8221;</div>
+          <div class="response-text">&#8220;Thanks for that. Maybe we can start with what you&#8217;re comparing at the
+            moment, then see what would make sense from there. When you say you need something better, what is not
+            working with the current options? I want to make sure I understand before suggesting anything. So if I
+            understand correctly, the main issue is that the options look similar, but it is not clear which one fits
+            your priorities best. Based on that, the useful next step would be to define the main criteria before
+            looking at solutions. Would it make sense to do that together?&#8221;</div>
         </div>
       </div>
 
@@ -3878,7 +4069,13 @@
           <div class="client-label">Client</div>
           <div class="client-quote">&#8220;We&#8217;re just having some internal issues.&#8221;</div>
           <div class="client-label mt-10">Full sequence response</div>
-          <div class="response-text">&#8220;I understand. It would be useful to understand the situation a bit better. Can you tell me which area the issues are appearing in &#8212; is it more about priorities, communication, timing, or decision-making? When you say internal issues, what does that usually look like in practice? So it sounds like the main challenge is that different people may have different priorities, which makes it harder to agree on the next step. Based on that, the useful thing would be to clarify who needs to be involved and what decision you are trying to make. Would it be helpful to map that out in a follow-up?&#8221;</div>
+          <div class="response-text">&#8220;I understand. It would be useful to understand the situation a bit better.
+            Can you tell me which area the issues are appearing in &#8212; is it more about priorities, communication,
+            timing, or decision-making? When you say internal issues, what does that usually look like in practice? So
+            it sounds like the main challenge is that different people may have different priorities, which makes it
+            harder to agree on the next step. Based on that, the useful thing would be to clarify who needs to be
+            involved and what decision you are trying to make. Would it be helpful to map that out in a
+            follow-up?&#8221;</div>
         </div>
       </div>
 
@@ -4162,7 +4359,8 @@
           <div class="prompt-header" onclick="togglePrompt(this)">
             <div>
               <div class="prompt-title">Prompt 6 &#8212; Timeline Unclear</div>
-              <div class="prompt-quote">&#8220;We may look at this next quarter, but we&#8217;re not sure yet.&#8221;</div>
+              <div class="prompt-quote">&#8220;We may look at this next quarter, but we&#8217;re not sure yet.&#8221;
+              </div>
             </div>
             <svg class="prompt-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
               <path d="M4.5 7L9 11.5 13.5 7" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"
@@ -4414,9 +4612,15 @@
       <div class="mini-example mt-16">
         <div class="mini-example-label">Example Strong Response</div>
         <div class="client-label">Client</div>
-        <div class="client-quote">&#8220;We&#8217;re comparing a few options, but we&#8217;re not sure what matters most yet.&#8221;</div>
+        <div class="client-quote">&#8220;We&#8217;re comparing a few options, but we&#8217;re not sure what matters most
+          yet.&#8221;</div>
         <div class="client-label mt-10">Response</div>
-        <div class="response-text">&#8220;Thanks for sharing that. Before we look at anything specific, it would be useful to understand what your team is trying to improve. When you say you&#8217;re not sure what matters most, is the decision more about cost, ease of use, implementation, support, or something else? So if I understand correctly, the main issue is that the options look similar, but the decision criteria are not clear yet. Based on that, a useful next step would be to clarify the priorities before comparing solutions. Would it make sense to do that together?&#8221;</div>
+        <div class="response-text">&#8220;Thanks for sharing that. Before we look at anything specific, it would be
+          useful to understand what your team is trying to improve. When you say you&#8217;re not sure what matters
+          most, is the decision more about cost, ease of use, implementation, support, or something else? So if I
+          understand correctly, the main issue is that the options look similar, but the decision criteria are not clear
+          yet. Based on that, a useful next step would be to clarify the priorities before comparing solutions. Would it
+          make sense to do that together?&#8221;</div>
       </div>
       <div class="optional-q mt-16">
         <div class="optional-q-label">Optional &#8212; quick question</div>
@@ -4800,9 +5004,15 @@
       <div class="mini-example" style="margin-top:0">
         <div class="mini-example-label">Example &#8212; Not Sure What We Need</div>
         <div class="client-label">Client</div>
-        <div class="client-quote">&#8220;We&#8217;re comparing a few options, but we&#8217;re not sure what we actually need yet.&#8221;</div>
+        <div class="client-quote">&#8220;We&#8217;re comparing a few options, but we&#8217;re not sure what we actually
+          need yet.&#8221;</div>
         <div class="client-label mt-10">Response</div>
-        <div class="response-text">&#8220;Thanks for sharing that. Maybe we can start with what you&#8217;re trying to improve, then see what would make sense from there. When you say you&#8217;re not sure what you need, what is making the decision unclear right now? So if I understand correctly, the main issue is that the options look similar, but your decision criteria are not fully clear yet. Based on that, the useful next step would be to clarify your priorities before comparing solutions. Would it make sense to look at those together?&#8221;</div>
+        <div class="response-text">&#8220;Thanks for sharing that. Maybe we can start with what you&#8217;re trying to
+          improve, then see what would make sense from there. When you say you&#8217;re not sure what you need, what is
+          making the decision unclear right now? So if I understand correctly, the main issue is that the options look
+          similar, but your decision criteria are not fully clear yet. Based on that, the useful next step would be to
+          clarify your priorities before comparing solutions. Would it make sense to look at those together?&#8221;
+        </div>
       </div>
 
       <!-- Section 4: Use This When -->
