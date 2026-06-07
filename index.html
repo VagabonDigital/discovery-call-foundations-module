@@ -5255,7 +5255,7 @@
             Clearly</span><span class="jump-link-desc">Start with warmth and direction.</span></button>
         <button class="jump-link" onclick="jumpTo(7)"><span class="jump-link-title">Skill 2 &#8212; Set
             Direction</span><span class="jump-link-desc">Give the call a clear path.</span></button>
-        <button class="jump-link" onclick="jumpTo(8)"><span class="jump-link-title">Skill 3 &#8212; Ask Discovery
+        <button class="jump-link" onclick="jumpTo(8)"><span class="jump-link-title">Skill 3 &#8212; Ask Useful Discovery
             Questions</span><span class="jump-link-desc">Reveal situation, goals, and challenges.</span></button>
         <button class="jump-link" onclick="jumpTo(9)"><span class="jump-link-title">Skill 4 &#8212; Deepen Vague
             Answers</span><span class="jump-link-desc">Turn general answers into useful detail.</span></button>
@@ -5281,8 +5281,8 @@
       </div>
       <div class="jump-section-label">Finish</div>
       <div class="jump-links">
-        <button class="jump-link" onclick="jumpTo(18)"><span class="jump-link-title">Discovery Call Complete</span><span
-            class="jump-link-desc">Review what you can now do</span></button>
+        <button class="jump-link" onclick="jumpTo(18)"><span class="jump-link-title">Discovery Call Foundations
+            Complete</span><span class="jump-link-desc">Review what you can now do</span></button>
         <button class="jump-link" onclick="jumpTo(19)"><span class="jump-link-title">Bonus Round</span><span
             class="jump-link-desc">Optional extra practice</span></button>
         <button class="jump-link" id="qr-jump-link" onclick="jumpToQuickReference()"><span class="jump-link-title">Quick
@@ -5333,7 +5333,7 @@
       5: 'Discovery Areas',
       6: 'Open the Call Clearly',
       7: 'Set Direction',
-      8: 'Ask Discovery Questions',
+      8: 'Ask Useful Discovery Questions',
       9: 'Deepen Vague Answers',
       10: 'Summarise What You Heard',
       11: 'Connect Value Carefully',
@@ -5412,7 +5412,7 @@
       } else {
         document.querySelectorAll('.jump-link').forEach(function (el) {
           const fn = el.getAttribute('onclick');
-          if (fn && fn.includes('jumpTo(' + p + ')')) { el.classList.add('current'); }
+          if (fn && fn.trim() === 'jumpTo(' + p + ')') { el.classList.add('current'); }
         });
       }
     }
