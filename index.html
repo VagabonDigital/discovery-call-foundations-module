@@ -1281,15 +1281,15 @@
       transition: var(--transition)
     }
 
-    .practice-tab:hover {
-      border-color: var(--teal);
-      color: var(--teal)
-    }
-
     .practice-tab.active {
       background: var(--navy);
       border-color: var(--navy);
       color: white
+    }
+
+    .practice-tab:hover:not(.active) {
+      border-color: var(--navy);
+      color: var(--navy)
     }
 
     .practice-pane {
@@ -1302,32 +1302,35 @@
 
     .practice-card {
       background: var(--card);
-      border: 1px solid var(--border);
+      border: 1.5px solid var(--border);
       border-radius: var(--radius);
       padding: 20px 22px;
       box-shadow: var(--shadow)
     }
 
     .practice-prompt {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--navy);
+      background: #F8F7F4;
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      font-size: 14px;
       font-style: italic;
-      margin-bottom: 10px;
-      line-height: 1.45
+      color: var(--navy-mid);
+      border-left: 3px solid var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.55
     }
 
     .practice-task {
-      font-size: 13.5px;
-      color: var(--muted);
+      font-size: 14px;
+      color: var(--navy);
       line-height: 1.6
     }
 
     .practice-options {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 14px
+      gap: 7px;
+      margin-top: 10px
     }
 
     .practice-opt {
@@ -3240,7 +3243,7 @@
         <div class="ws-grid">
           <div class="ws-card weak">
             <div class="ws-tag">Weak</div>
-            <div class="ws-text">&#8220;Hi. So, what do you need?&#8221;</div>
+            <div class="ws-text">&#8220;Hi, thanks for joining. I wanted to ask you a few questions today.&#8221;</div>
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
@@ -3279,23 +3282,24 @@
         <div class="practice-pane active" id="p6-c">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;Hi, thanks for taking the call.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Open the call with warmth and a clear sense of purpose. Do
-              not ask a question yet.</div>
+            <div class="practice-task"><strong>Task:</strong> Open the call with warmth and a clear sense of purpose.
+              Suggested start: &#8220;Thanks for taking the time today. To start, it would be useful to...&#8221; Do not
+              ask a question yet.</div>
           </div>
         </div>
         <div class="practice-pane" id="p6-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;Hi, we only have about 20 minutes today.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Open the call professionally and set a calm tone even with
-              a time constraint.</div>
+            <div class="practice-prompt">Use a real call from your current role.</div>
+            <div class="practice-task"><strong>Task:</strong> Open the call with warmth, purpose, and control before
+              moving into questions.</div>
           </div>
         </div>
         <div class="practice-pane" id="p6-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;Hi, I have to be honest &#8212; I&#8217;m not sure why this call was set
-              up.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client sounds uncertain. Open the call in a way
-              that creates confidence and direction without sounding defensive.</div>
+            <div class="practice-prompt">Keep the same real call. The person sounds unsure why the call was set up.
+            </div>
+            <div class="practice-task"><strong>Challenge:</strong> Open the call in a way that creates confidence and
+              direction without sounding defensive.</div>
           </div>
         </div>
       </div>
@@ -3393,22 +3397,23 @@
         <div class="practice-pane active" id="p7-c">
           <div class="practice-card">
             <div class="practice-prompt">The client has just joined the call.</div>
-            <div class="practice-task"><strong>Task:</strong> Set a simple direction for the conversation in two or
-              three sentences.</div>
+            <div class="practice-task"><strong>Task:</strong> Set a simple direction for the conversation before asking
+              questions. Suggested start: &#8220;Maybe we can start with your current situation, then I&#8217;ll ask a
+              few questions to understand the priorities.&#8221;</div>
           </div>
         </div>
         <div class="practice-pane" id="p7-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;I&#8217;m not sure exactly what you offer.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Set direction in a way that also gently reassures the
-              client without over-explaining.</div>
+            <div class="practice-prompt">Use a real call from your current role.</div>
+            <div class="practice-task"><strong>Task:</strong> Set a simple direction so the person knows how the
+              conversation will work before you begin asking questions.</div>
           </div>
         </div>
         <div class="practice-pane" id="p7-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;Can we just get to the point?&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client sounds impatient. Set direction quickly
-              and confidently without sounding rushed.</div>
+            <div class="practice-prompt">Keep the same real call. The person wants to get straight to the point.</div>
+            <div class="practice-task"><strong>Challenge:</strong> Set direction quickly and confidently without
+              sounding rushed.</div>
           </div>
         </div>
       </div>
@@ -3467,7 +3472,7 @@
         <div class="ws-grid">
           <div class="ws-card weak">
             <div class="ws-tag">Weak</div>
-            <div class="ws-text">&#8220;What do you need?&#8221;</div>
+            <div class="ws-text">&#8220;So, what kind of solution are you looking for?&#8221;</div>
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
@@ -3506,22 +3511,24 @@
         <div class="practice-pane active" id="p8-c">
           <div class="practice-card">
             <div class="practice-prompt">&#8220;We&#8217;re looking for a better solution.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Ask two useful discovery questions that help you
-              understand the client&#8217;s current situation and what they want to improve.</div>
+            <div class="practice-task"><strong>Task:</strong> Ask a useful discovery question that helps you understand
+              the current situation and what they want to improve. Suggested start: &#8220;Can you tell me what
+              you&#8217;re trying to improve and how you&#8217;re handling it currently?&#8221;</div>
           </div>
         </div>
         <div class="practice-pane" id="p8-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;We&#8217;ve been having some issues internally.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Ask questions that help the client describe the problem
-              without feeling pressured.</div>
+            <div class="practice-prompt">Use a real discovery call from your current role.</div>
+            <div class="practice-task"><strong>Task:</strong> Ask questions that help you understand the person&#8217;s
+              situation, problem, priority, and goal before recommending anything.</div>
           </div>
         </div>
         <div class="practice-pane" id="p8-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;We&#8217;re just exploring options right now.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is giving very little away. Ask questions
-              that open the conversation without making them feel committed.</div>
+            <div class="practice-prompt">Keep the same real call. The person gives short answers and says they are just
+              exploring options.</div>
+            <div class="practice-task"><strong>Challenge:</strong> Ask questions that open the conversation without
+              making them feel pressured or committed.</div>
           </div>
         </div>
       </div>
@@ -3618,23 +3625,24 @@
           <div class="practice-card">
             <div class="practice-prompt">&#8220;It&#8217;s just not very efficient.&#8221;</div>
             <div class="practice-task"><strong>Task:</strong> Ask one deepening question that turns this vague answer
-              into something specific.</div>
+              into something specific. Suggested start: &#8220;When you say that, what does it usually look like day to
+              day?&#8221;</div>
           </div>
         </div>
         <div class="practice-pane" id="p9-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;We need better visibility across the team.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Ask follow-up questions that help the client explain what
-              visibility means to them and where it breaks down.</div>
+            <div class="practice-prompt">Use a real conversation from your current role where someone gives a vague or
+              general answer.</div>
+            <div class="practice-task"><strong>Task:</strong> Ask a follow-up question that helps them explain the issue
+              more clearly and specifically.</div>
           </div>
         </div>
         <div class="practice-pane" id="p9-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;It&#8217;s hard to explain. It just doesn&#8217;t work well.&#8221;
-            </div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is struggling to articulate the problem.
-              Ask a gentle deepening question that helps them find the right words without making them feel
-              uncomfortable.</div>
+            <div class="practice-prompt">Keep the same real conversation. The person struggles to explain the problem
+              clearly.</div>
+            <div class="practice-task"><strong>Challenge:</strong> Ask a gentle deepening question that helps them find
+              the right words without making them feel uncomfortable.</div>
           </div>
         </div>
       </div>
@@ -3729,23 +3737,24 @@
         </div>
         <div class="practice-pane active" id="p10-c">
           <div class="practice-card">
-            <div class="practice-prompt">The client has just explained their situation.</div>
+            <div class="practice-prompt">&#8220;We spend too much time chasing updates manually, and it slows the whole
+              team down.&#8221;</div>
             <div class="practice-task"><strong>Task:</strong> Summarise what you heard in two sentences and check
-              accuracy.</div>
+              accuracy. Suggested start: &#8220;So if I understand correctly, [summary]. Is that accurate?&#8221;</div>
           </div>
         </div>
         <div class="practice-pane" id="p10-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;We have a few issues but the main one is the reporting. It takes too
-              long and the data is never up to date.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Summarise the client&#8217;s situation clearly and confirm
-              before moving forward.</div>
+            <div class="practice-prompt">Use a real conversation from your current role where someone explains a
+              situation, problem, priority, or concern.</div>
+            <div class="practice-task"><strong>Task:</strong> Summarise what you heard clearly before moving forward.
+            </div>
           </div>
         </div>
         <div class="practice-pane" id="p10-r">
           <div class="practice-card">
-            <div class="practice-prompt">The client has given a long, detailed answer covering several different
-              problems.</div>
+            <div class="practice-prompt">Keep the same real conversation. The person gives a long answer with several
+              different details.</div>
             <div class="practice-task"><strong>Challenge:</strong> Summarise the most important point without losing the
               other details, and check that your summary is accurate.</div>
           </div>
@@ -3803,7 +3812,7 @@
         <div class="ws-grid">
           <div class="ws-card weak">
             <div class="ws-tag">Weak</div>
-            <div class="ws-text">&#8220;Our platform has many useful features.&#8221;</div>
+            <div class="ws-text">&#8220;Our solution has many useful features.&#8221;</div>
           </div>
           <div class="ws-card strong">
             <div class="ws-tag">Stronger</div>
@@ -3843,23 +3852,23 @@
           <div class="practice-card">
             <div class="practice-prompt">&#8220;We spend hours every week on manual reporting.&#8221;</div>
             <div class="practice-task"><strong>Task:</strong> Connect value to this specific problem without listing
-              features.</div>
+              features. Suggested start: &#8220;Based on what you described, the relevant value is...&#8221;</div>
           </div>
         </div>
         <div class="practice-pane" id="p11-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;The team is always waiting for updates before they can move
-              forward.&#8221;</div>
-            <div class="practice-task"><strong>Task:</strong> Connect value in a way that uses the client&#8217;s own
-              language and addresses the delay they described.</div>
+            <div class="practice-prompt">Use a real conversation from your current role where someone has described a
+              problem, priority, delay, risk, or goal.</div>
+            <div class="practice-task"><strong>Task:</strong> Connect value carefully by linking your response to what
+              they actually said.</div>
           </div>
         </div>
         <div class="practice-pane" id="p11-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;I&#8217;m not sure your solution is really that different from what we
-              already have.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is skeptical. Connect value specifically
-              to the problem they described without sounding defensive.</div>
+            <div class="practice-prompt">Keep the same real conversation. The person is skeptical and unsure whether
+              your solution, idea, or recommendation is really different from what they already have.</div>
+            <div class="practice-task"><strong>Challenge:</strong> Connect value specifically to the problem they
+              described without sounding defensive.</div>
           </div>
         </div>
       </div>
@@ -3955,22 +3964,24 @@
         <div class="practice-pane active" id="p12-c">
           <div class="practice-card">
             <div class="practice-prompt">The discovery call has gone well.</div>
-            <div class="practice-task"><strong>Task:</strong> Propose a clear next step without sounding pushy.</div>
+            <div class="practice-task"><strong>Task:</strong> Propose a clear next step without sounding pushy.
+              Suggested start: &#8220;Would it make sense to schedule a follow-up where we look at the options
+              together?&#8221;</div>
           </div>
         </div>
         <div class="practice-pane" id="p12-a">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;I&#8217;ll need to speak with my manager before we go further.&#8221;
-            </div>
-            <div class="practice-task"><strong>Task:</strong> Confirm the next step in a way that keeps momentum and
-              includes the manager naturally.</div>
+            <div class="practice-prompt">Use a real discovery call from your current role.</div>
+            <div class="practice-task"><strong>Task:</strong> Confirm a clear next step that keeps the conversation
+              moving after the call.</div>
           </div>
         </div>
         <div class="practice-pane" id="p12-r">
           <div class="practice-card">
-            <div class="practice-prompt">&#8220;Let me think about it and get back to you.&#8221;</div>
-            <div class="practice-task"><strong>Challenge:</strong> The client is slowing down. Propose a specific next
-              step that gives them a reason to say yes rather than waiting.</div>
+            <div class="practice-prompt">Keep the same real call. The person is interested but says they need to think
+              about it first.</div>
+            <div class="practice-task"><strong>Challenge:</strong> Propose a specific next step that gives them a reason
+              to say yes rather than waiting vaguely.</div>
           </div>
         </div>
       </div>
